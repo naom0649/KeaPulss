@@ -1,7 +1,18 @@
 {
   "Deploy": {
     "Project": {
-      "Workspaces": []
+      "Name": "kgatelggflghvyiwkqs creative kangaroo",
+      "Alias": "kgatelggflghvyiwkqs-creative-kangaroo",
+      "Id": "197d4a85-3e18-400d-9941-30d1e70760b3",
+      "TrialExpireDate": "2023-12-13T08:22:37.0000000",
+      "Workspaces": [
+        {
+          "Id": "08a098a7-d646-4c8c-9abc-af418e555e6f",
+          "Name": "Live",
+          "Type": "live",
+          "Url": "https://kgatelggflghvyiwkqs-creative-kangaroo.euwest01.umbraco.io"
+        }
+      ]
     },
     "Settings": {}
   },
