@@ -7,6 +7,12 @@
       "TrialExpireDate": "2023-12-13T08:22:37.0000000",
       "Workspaces": [
         {
+          "Id": "673bc5a5-c205-488f-b6a4-824a98b9d838",
+          "Name": "Development",
+          "Type": "development",
+          "Url": "https://dev-kgatelggflghvyiwkqs-creative-kangaroo.euwest01.umbraco.io"
+        },
+        {
           "Id": "08a098a7-d646-4c8c-9abc-af418e555e6f",
           "Name": "Live",
           "Type": "live",
