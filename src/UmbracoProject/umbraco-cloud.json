@@ -1,22 +1,22 @@
 {
   "Deploy": {
     "Project": {
-      "Name": "kgatelggflghvyiwkqs creative kangaroo",
-      "Alias": "kgatelggflghvyiwkqs-creative-kangaroo",
+      "Name": "KeaPuls",
+      "Alias": "keapuls",
       "Id": "197d4a85-3e18-400d-9941-30d1e70760b3",
+      "Url": "https://www.s1.umbraco.io/project/keapuls",
       "TrialExpireDate": "2023-12-13T08:22:37.0000000",
       "Workspaces": [
         {
           "Id": "673bc5a5-c205-488f-b6a4-824a98b9d838",
           "Name": "Development",
-          "Type": "development",
-          "Url": "https://dev-kgatelggflghvyiwkqs-creative-kangaroo.euwest01.umbraco.io"
+          "Type": "development"
         },
         {
           "Id": "08a098a7-d646-4c8c-9abc-af418e555e6f",
           "Name": "Live",
           "Type": "live",
-          "Url": "https://kgatelggflghvyiwkqs-creative-kangaroo.euwest01.umbraco.io"
+          "Url": "https://keapuls.euwest01.umbraco.io"
         }
       ]
     },
