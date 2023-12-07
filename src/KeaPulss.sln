@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31903.59
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "UmbracoProject", "UmbracoProject\UmbracoProject.csproj", "{1655D9DF-5705-4A3A-84F3-239FB20C8E3A}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "KeaPulss.Models", "KeaPulss.Models\KeaPulss.Models.csproj", "{1B7C8676-BCD8-4B7B-AB9B-59B8FD7443F0}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{1655D9DF-5705-4A3A-84F3-239FB20C8E3A}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1655D9DF-5705-4A3A-84F3-239FB20C8E3A}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1655D9DF-5705-4A3A-84F3-239FB20C8E3A}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1655D9DF-5705-4A3A-84F3-239FB20C8E3A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{1B7C8676-BCD8-4B7B-AB9B-59B8FD7443F0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{1B7C8676-BCD8-4B7B-AB9B-59B8FD7443F0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{1B7C8676-BCD8-4B7B-AB9B-59B8FD7443F0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{1B7C8676-BCD8-4B7B-AB9B-59B8FD7443F0}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {259CAFA8-B030-4A98-818B-C4AC9E8F163B}
+	EndGlobalSection
+EndGlobal
