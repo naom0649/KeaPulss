@@ -1,0 +1,31 @@
+{
+  "Name": "Footer - SoMe - Block List",
+  "Alias": "",
+  "EditorAlias": "Umbraco.BlockList",
+  "DatabaseType": 0,
+  "Configuration": {
+    "blocks": [
+      {
+        "contentElementTypeKey": "373b13ab-58ee-4c66-b35c-0188a99709fa",
+        "label": "{{soMeLink[0][\"name\"]}}",
+        "editorSize": "medium",
+        "forceHideContentEditorInOverlay": false
+      }
+    ],
+    "validationLimit": {},
+    "useSingleBlockMode": false,
+    "useLiveEditing": false,
+    "useInlineEditingAsDefault": false
+  },
+  "Parent": "umb://data-type-container/afa89d02fc354bde9f66ccd0e122a783",
+  "Udi": "umb://data-type/c41be554d8044fc58e63a1e7c613acb6",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/afa89d02fc354bde9f66ccd0e122a783",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

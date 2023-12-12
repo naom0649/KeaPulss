@@ -1,0 +1,10 @@
+{
+  "Name": "KeaPulss",
+  "Alias": "",
+  "ContainedObjectType": "30a2a501-1978-4ddb-a57b-f7efed43ba3c",
+  "Parent": null,
+  "Udi": "umb://data-type-container/2a4a074a3c6a4087a5a323f5503aedba",
+  "Dependencies": [],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContainerArtifact",
+  "__version": "12.0.5"
+}
