@@ -1,4 +1,4 @@
-namespace UmbracoProject
+namespace KeaPulss.Web
 {
     public class Program
     {
