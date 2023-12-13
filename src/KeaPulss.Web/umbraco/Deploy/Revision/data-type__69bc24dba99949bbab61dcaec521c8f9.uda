@@ -1,0 +1,57 @@
+{
+  "Name": "List Grid",
+  "Alias": "",
+  "EditorAlias": "Umbraco.BlockGrid",
+  "DatabaseType": 0,
+  "Configuration": {
+    "blocks": [
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "525a949c-0a8a-43e4-879e-22798602458f",
+        "label": "News",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "ea309695-37f7-4747-8f4d-16149b27d4d0"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "99cfed6a-8574-4b51-b24a-aa91a50e36e5",
+        "label": "Event List",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "ea309695-37f7-4747-8f4d-16149b27d4d0"
+      }
+    ],
+    "blockGroups": [
+      {
+        "key": "ea309695-37f7-4747-8f4d-16149b27d4d0",
+        "name": "Component"
+      }
+    ],
+    "validationLimit": {},
+    "useLiveEditing": false
+  },
+  "Parent": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+  "Udi": "umb://data-type/69bc24dba99949bbab61dcaec521c8f9",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

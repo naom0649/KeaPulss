@@ -3,4 +3,17 @@
 @model HeaderViewModel
 
 
-       
+@if (Model.Logo != null)
+{
+      <div class="max-w-[116px]">
+        <img src="@Model.Logo.Url()">
+    </div>
+}
+
+else
+{
+    @*Fallback footer logo*@
+    <svg class="max-w-[116px] max-h-[58px] ">
+        <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+    </svg>
+}

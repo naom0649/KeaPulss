@@ -1,0 +1,24 @@
+{
+  "Name": "News Overview URL Picker",
+  "Alias": "",
+  "EditorAlias": "Umbraco.MultiUrlPicker",
+  "DatabaseType": 0,
+  "Configuration": {
+    "minNumber": 0,
+    "maxNumber": 1,
+    "overlaySize": "small",
+    "hideAnchor": false,
+    "ignoreUserStartNodes": false
+  },
+  "Parent": "umb://data-type-container/21b3808835784f41a0cab9c9ebae8cbc",
+  "Udi": "umb://data-type/63afd3729a90415e8c264706c6dac65d",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/21b3808835784f41a0cab9c9ebae8cbc",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

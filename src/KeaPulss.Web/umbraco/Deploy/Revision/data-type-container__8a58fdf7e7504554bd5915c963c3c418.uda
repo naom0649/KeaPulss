@@ -1,0 +1,16 @@
+{
+  "Name": "BlockGrinds",
+  "Alias": "",
+  "ContainedObjectType": "30a2a501-1978-4ddb-a57b-f7efed43ba3c",
+  "Parent": "umb://data-type-container/2a4a074a3c6a4087a5a323f5503aedba",
+  "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/2a4a074a3c6a4087a5a323f5503aedba",
+      "Ordering": true,
+      "Mode": 1
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContainerArtifact",
+  "__version": "12.0.5"
+}
