@@ -1,3 +1,27 @@
 ﻿@using Umbraco.Cms.Core.Models.Blocks;
 @using KeaPulss.Models;
+
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+
+<head>
+</head>
+
+<body class="flex flex-col min-h-screen overflow-x-hidden" data-page-type="@Model.ContentType.Alias">
+
+   
+
+    <div id="main-content">
+        @RenderBody()
+    </div>
+    
+    </body>
+
+

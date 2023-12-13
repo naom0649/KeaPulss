@@ -17,18 +17,58 @@
   "Permissions": {
     "AllowVaryingByCulture": false,
     "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
+    "AllowedAtRoot": true,
     "IsElementType": false,
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "04544f75-705e-480e-b169-378e29f3360e",
+      "Name": "Hero",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "hero",
+      "PropertyTypes": [
+        {
+          "Key": "c30bddc5-56a6-40db-8a11-b7b6607c17e7",
+          "Alias": "heroColor",
+          "DataType": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "HeroColor",
+          "SortOrder": 0,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
   "Dependencies": [
     {
+      "Udi": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
       "Ordering": true,
       "Mode": 0
     },

@@ -15,9 +15,11 @@
   "Permissions": {
     "AllowVaryingByCulture": false,
     "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
+    "AllowedAtRoot": true,
     "IsElementType": false,
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/9dc405e62620418b8b4c6591eec38c4e"
+    ]
   },
   "Parent": null,
   "CompositionContentTypes": [],
@@ -223,7 +225,7 @@
           "Alias": "logo",
           "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
           "Description": null,
-          "Mandatory": false,
+          "Mandatory": true,
           "MandatoryMessage": null,
           "Name": "Logo",
           "SortOrder": 0,
@@ -283,6 +285,11 @@
     {
       "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
       "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
+      "Ordering": false,
       "Mode": 0
     }
   ],
