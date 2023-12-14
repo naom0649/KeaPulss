@@ -1,6 +1,6 @@
 {
-  "Name": "News List Component",
-  "Alias": "newsListComponent",
+  "Name": "InfoBox",
+  "Alias": "infoBox",
   "DefaultTemplate": null,
   "AllowedTemplates": [],
   "HistoryCleanup": {
@@ -8,7 +8,7 @@
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-newspaper-alt color-light-green",
+  "Icon": "icon-chat color-light-green",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,
@@ -23,20 +23,20 @@
   "CompositionContentTypes": [],
   "PropertyGroups": [
     {
-      "Key": "cda8cfaf-5266-4e32-8312-671a5aa25c58",
+      "Key": "8840df62-d07e-4242-b431-cc5c42534244",
       "Name": "Properties",
       "SortOrder": 0,
       "Type": 0,
       "Alias": "properties",
       "PropertyTypes": [
         {
-          "Key": "e978c467-df31-4c72-af26-d5b05e4a277d",
-          "Alias": "title",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Key": "3e57de4f-45ae-45c0-a7ee-7fa10a2875f5",
+          "Alias": "readMoreLink",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Title",
+          "Name": "Read More Link",
           "SortOrder": 0,
           "Validation": null,
           "ValidationMessage": null,
@@ -48,13 +48,31 @@
           "IsSensitive": false
         },
         {
-          "Key": "f1288daa-fa96-4853-afd1-f1d1321e4d0c",
-          "Alias": "browseMoreLink",
-          "DataType": "umb://data-type/63afd3729a90415e8c264706c6dac65d",
+          "Key": "a041b919-ece7-4d8e-b7eb-c28e148c7dde",
+          "Alias": "description",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Browse More Link",
+          "Name": "Description",
+          "SortOrder": 2,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "f2e76205-d751-4164-ac5e-71c6a18622ff",
+          "Alias": "backgroundcolor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Backgroundcolor",
           "SortOrder": 1,
           "Validation": null,
           "ValidationMessage": null,
@@ -69,15 +87,20 @@
     }
   ],
   "PropertyTypes": [],
-  "Udi": "umb://document-type/525a949c0a8a43e4879e22798602458f",
+  "Udi": "umb://document-type/41e1fb26a97d422c9e4250abe5190d66",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+      "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/63afd3729a90415e8c264706c6dac65d",
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
       "Ordering": true,
       "Mode": 0
     },

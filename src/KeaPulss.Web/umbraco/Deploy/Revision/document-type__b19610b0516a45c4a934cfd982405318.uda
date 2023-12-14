@@ -1,28 +1,25 @@
 {
-  "Name": "FrontPage",
-  "Alias": "frontPage",
-  "DefaultTemplate": "umb://template/8869d5c17c154fbdb6ee0d2cced7a505",
+  "Name": "Studielive Page",
+  "Alias": "studielivePage",
+  "DefaultTemplate": "umb://template/69d1798a09ab4d739a8f491e96e67394",
   "AllowedTemplates": [
-    "umb://template/8869d5c17c154fbdb6ee0d2cced7a505"
+    "umb://template/69d1798a09ab4d739a8f491e96e67394"
   ],
   "HistoryCleanup": {
     "preventCleanup": false,
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-home color-orange",
+  "Icon": "icon-people-alt color-orange",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,
   "Permissions": {
     "AllowVaryingByCulture": false,
     "AllowVaryingBySegment": false,
-    "AllowedAtRoot": true,
+    "AllowedAtRoot": false,
     "IsElementType": false,
-    "AllowedChildContentTypes": [
-      "umb://document-type/691086e2685744f7929c9c29d09d0d5d",
-      "umb://document-type/b19610b0516a45c4a934cfd982405318"
-    ]
+    "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
   "CompositionContentTypes": [
@@ -30,21 +27,57 @@
   ],
   "PropertyGroups": [
     {
-      "Key": "04544f75-705e-480e-b169-378e29f3360e",
-      "Name": "Hero",
-      "SortOrder": 0,
+      "Key": "0e665304-b421-4c19-8fc4-7b6cd6191960",
+      "Name": "Content",
+      "SortOrder": 1,
       "Type": 0,
-      "Alias": "hero",
+      "Alias": "content",
       "PropertyTypes": [
         {
-          "Key": "c30bddc5-56a6-40db-8a11-b7b6607c17e7",
-          "Alias": "heroColor",
-          "DataType": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
+          "Key": "a48c90d3-7851-4002-a615-144dff390f21",
+          "Alias": "pageTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "HeroColor",
+          "Name": "Page Title",
           "SortOrder": 0,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "cf4c9b40-ce52-4712-8680-f1610702c4bb",
+          "Alias": "pageDescription",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Page Description",
+          "SortOrder": 1,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "f8e04403-e2b8-48b6-8740-e9e77512af35",
+          "Alias": "pagePicture",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Page Picture",
+          "SortOrder": 2,
           "Validation": null,
           "ValidationMessage": null,
           "VariesByCulture": false,
@@ -57,38 +90,20 @@
       ]
     },
     {
-      "Key": "65f4834c-7ade-432b-ad71-633c498229ba",
-      "Name": "Grid",
-      "SortOrder": 1,
+      "Key": "99ff38ee-44ee-4db9-abfd-6f03579ec154",
+      "Name": "Hero",
+      "SortOrder": 0,
       "Type": 0,
-      "Alias": "grid",
+      "Alias": "hero",
       "PropertyTypes": [
         {
-          "Key": "37545868-6bbf-4dac-bd05-442f72517aa3",
-          "Alias": "listGrid",
-          "DataType": "umb://data-type/69bc24dba99949bbab61dcaec521c8f9",
+          "Key": "939c4818-35cd-4abd-a26c-1cd23fd3f1bd",
+          "Alias": "picture",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "List Grid",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
-        },
-        {
-          "Key": "f68a48a1-9537-48bf-b4a1-53adb0abdea9",
-          "Alias": "newsContent",
-          "DataType": "umb://data-type/84085b90bda149d089604b66120209d9",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "News Content",
+          "Name": "Picture",
           "SortOrder": 0,
           "Validation": null,
           "ValidationMessage": null,
@@ -103,20 +118,20 @@
     }
   ],
   "PropertyTypes": [],
-  "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
+  "Udi": "umb://document-type/b19610b0516a45c4a934cfd982405318",
   "Dependencies": [
     {
-      "Udi": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
+      "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/69bc24dba99949bbab61dcaec521c8f9",
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/84085b90bda149d089604b66120209d9",
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
       "Ordering": true,
       "Mode": 0
     },
@@ -126,22 +141,12 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/691086e2685744f7929c9c29d09d0d5d",
-      "Ordering": false,
-      "Mode": 0
-    },
-    {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
       "Ordering": true,
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type/b19610b0516a45c4a934cfd982405318",
-      "Ordering": false,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://template/8869d5c17c154fbdb6ee0d2cced7a505",
+      "Udi": "umb://template/69d1798a09ab4d739a8f491e96e67394",
       "Ordering": true,
       "Mode": 0
     }

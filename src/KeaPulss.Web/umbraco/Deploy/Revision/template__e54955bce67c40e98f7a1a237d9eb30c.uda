@@ -1,0 +1,16 @@
+{
+  "Name": "Studieliv Page",
+  "Alias": "StudielivPage",
+  "File": "umb://template-file/StudielivPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/e54955bce67c40e98f7a1a237d9eb30c",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/StudielivPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "12.0.5"
+}

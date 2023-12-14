@@ -1,0 +1,16 @@
+{
+  "Name": "Bliv Frivillig Page",
+  "Alias": "BlivFrivilligPage",
+  "File": "umb://template-file/BlivFrivilligPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/0505e705c4004e6b89613424fe6d8167",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/BlivFrivilligPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "12.0.5"
+}

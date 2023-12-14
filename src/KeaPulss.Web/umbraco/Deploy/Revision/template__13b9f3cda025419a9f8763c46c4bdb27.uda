@@ -1,0 +1,16 @@
+{
+  "Name": "Studenterpolitik Page",
+  "Alias": "StudenterpolitikPage",
+  "File": "umb://template-file/StudenterpolitikPage.cshtml",
+  "Master": null,
+  "Udi": "umb://template/13b9f3cda025419a9f8763c46c4bdb27",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/StudenterpolitikPage.cshtml",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "12.0.5"
+}

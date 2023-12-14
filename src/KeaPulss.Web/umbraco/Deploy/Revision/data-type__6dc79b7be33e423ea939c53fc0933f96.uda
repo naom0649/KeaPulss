@@ -1,5 +1,5 @@
 {
-  "Name": "FrontPage Content Grid",
+  "Name": "News Page Content Grid",
   "Alias": "",
   "EditorAlias": "Umbraco.BlockGrid",
   "DatabaseType": 0,
@@ -18,7 +18,7 @@
         "editorSize": "medium",
         "inlineEditing": false,
         "forceHideContentEditorInOverlay": false,
-        "groupKey": "8fc803d5-a078-47a3-b70b-b5bc953e5806"
+        "groupKey": "f539b8cf-6c32-4c61-9d46-67fa2366e60b"
       },
       {
         "columnSpanOptions": [],
@@ -33,7 +33,7 @@
         "editorSize": "medium",
         "inlineEditing": false,
         "forceHideContentEditorInOverlay": false,
-        "groupKey": "8fc803d5-a078-47a3-b70b-b5bc953e5806"
+        "groupKey": "f539b8cf-6c32-4c61-9d46-67fa2366e60b"
       },
       {
         "columnSpanOptions": [],
@@ -48,7 +48,38 @@
         "editorSize": "medium",
         "inlineEditing": false,
         "forceHideContentEditorInOverlay": false,
-        "groupKey": "8fc803d5-a078-47a3-b70b-b5bc953e5806"
+        "groupKey": "f539b8cf-6c32-4c61-9d46-67fa2366e60b"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": false,
+        "areas": [
+          {
+            "key": "25cb58b9-c8b5-464d-8083-e4118ab8f9eb",
+            "alias": "left",
+            "columnSpan": 6,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": []
+          },
+          {
+            "key": "0d2284d7-7c34-451e-8434-a18766ffc56e",
+            "alias": "right",
+            "columnSpan": 6,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": []
+          }
+        ],
+        "contentElementTypeKey": "871ab5a1-a8da-4e75-8dc9-ac343205db28",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoTwoColumnLayoutBlock.html",
+        "label": "Two Column Layout",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false
       },
       {
         "columnSpanOptions": [],
@@ -62,7 +93,7 @@
         "editorSize": "medium",
         "inlineEditing": false,
         "forceHideContentEditorInOverlay": false,
-        "groupKey": "8fc803d5-a078-47a3-b70b-b5bc953e5806"
+        "groupKey": "f539b8cf-6c32-4c61-9d46-67fa2366e60b"
       },
       {
         "columnSpanOptions": [],
@@ -70,47 +101,26 @@
         "rowMaxSpan": 1,
         "allowAtRoot": true,
         "allowInAreas": true,
-        "areas": [
-          {
-            "key": "7810ddd7-8637-4183-ad1f-e4179f459506",
-            "alias": "Left",
-            "columnSpan": 6,
-            "rowSpan": 1,
-            "minAllowed": 0,
-            "specifiedAllowance": []
-          },
-          {
-            "key": "6dc74f9c-9b77-41b2-a467-5548f145caa8",
-            "alias": "Right",
-            "columnSpan": 6,
-            "rowSpan": 1,
-            "minAllowed": 0,
-            "specifiedAllowance": []
-          }
-        ],
-        "contentElementTypeKey": "871ab5a1-a8da-4e75-8dc9-ac343205db28",
-        "label": "",
+        "areas": [],
+        "contentElementTypeKey": "41e1fb26-a97d-422c-9e42-50abe5190d66",
+        "label": "Info Box",
         "editorSize": "medium",
         "inlineEditing": false,
         "forceHideContentEditorInOverlay": false,
-        "groupKey": "c9426465-e823-467d-ab99-85a013d37a6a"
+        "groupKey": "f539b8cf-6c32-4c61-9d46-67fa2366e60b"
       }
     ],
     "blockGroups": [
       {
-        "key": "c9426465-e823-467d-ab99-85a013d37a6a",
-        "name": "Layout"
-      },
-      {
-        "key": "8fc803d5-a078-47a3-b70b-b5bc953e5806",
-        "name": "Blocks"
+        "key": "f539b8cf-6c32-4c61-9d46-67fa2366e60b",
+        "name": "Components"
       }
     ],
     "validationLimit": {},
     "useLiveEditing": false
   },
   "Parent": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
-  "Udi": "umb://data-type/84085b90bda149d089604b66120209d9",
+  "Udi": "umb://data-type/6dc79b7be33e423ea939c53fc0933f96",
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",

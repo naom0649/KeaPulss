@@ -1,0 +1,50 @@
+{
+  "Name": "Bliv Frivillig Page",
+  "Alias": "blivFrivilligPage",
+  "DefaultTemplate": "umb://template/0505e705c4004e6b89613424fe6d8167",
+  "AllowedTemplates": [
+    "umb://template/0505e705c4004e6b89613424fe6d8167"
+  ],
+  "HistoryCleanup": {
+    "preventCleanup": false,
+    "keepAllVersionsNewerThanDays": null,
+    "keepLatestVersionPerDayForDays": null
+  },
+  "Icon": "icon-network-alt color-orange",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+  "CompositionContentTypes": [
+    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
+  ],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/18a075a3a76449e1a0901b1dc818d514",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/0505e705c4004e6b89613424fe6d8167",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "12.0.5"
+}

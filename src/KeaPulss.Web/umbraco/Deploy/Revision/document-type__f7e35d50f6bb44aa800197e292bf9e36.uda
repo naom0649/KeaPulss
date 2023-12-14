@@ -8,7 +8,7 @@
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-notepad-alt color-black",
+  "Icon": "icon-notepad-alt color-light-green",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,

@@ -1,0 +1,43 @@
+{
+  "Name": "Administrator Page",
+  "Alias": "administratorPage",
+  "DefaultTemplate": "umb://template/57c5969e58cb4000b240681bddaf578f",
+  "AllowedTemplates": [
+    "umb://template/57c5969e58cb4000b240681bddaf578f"
+  ],
+  "HistoryCleanup": {
+    "preventCleanup": false,
+    "keepAllVersionsNewerThanDays": null,
+    "keepLatestVersionPerDayForDays": null
+  },
+  "Icon": "icon-keychain color-orange",
+  "Thumbnail": "folder.png",
+  "Description": null,
+  "IsContainer": false,
+  "Permissions": {
+    "AllowVaryingByCulture": false,
+    "AllowVaryingBySegment": false,
+    "AllowedAtRoot": false,
+    "IsElementType": false,
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+  "CompositionContentTypes": [],
+  "PropertyGroups": [],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/158244eee02f4eb4b861e9cbd00da383",
+  "Dependencies": [
+    {
+      "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://template/57c5969e58cb4000b240681bddaf578f",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "12.0.5"
+}

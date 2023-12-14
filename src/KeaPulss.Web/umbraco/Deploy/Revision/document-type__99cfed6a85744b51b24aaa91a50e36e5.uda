@@ -8,7 +8,7 @@
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-calendar-alt color-black",
+  "Icon": "icon-calendar-alt color-light-green",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,

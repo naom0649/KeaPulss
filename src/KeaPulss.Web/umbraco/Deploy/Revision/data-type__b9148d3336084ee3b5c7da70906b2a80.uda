@@ -1,0 +1,34 @@
+{
+  "Name": "Color Picker 3 Options",
+  "Alias": "",
+  "EditorAlias": "Umbraco.ColorPicker",
+  "DatabaseType": 1,
+  "Configuration": {
+    "useLabel": false,
+    "items": [
+      {
+        "id": 1,
+        "value": "{\"value\":\"cb4e44\",\"label\":\"cb4e44\"}"
+      },
+      {
+        "id": 2,
+        "value": "{\"value\":\"3470a6\",\"label\":\"3470a6\"}"
+      },
+      {
+        "id": 3,
+        "value": "{\"value\":\"5c804c\",\"label\":\"5c804c\"}"
+      }
+    ]
+  },
+  "Parent": "umb://data-type-container/95ce4de6e65146d8b17a7c2d5f1985e8",
+  "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/95ce4de6e65146d8b17a7c2d5f1985e8",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}
