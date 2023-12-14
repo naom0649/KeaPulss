@@ -1,16 +1,14 @@
 {
-  "Name": "Bliv Frivillig Page",
-  "Alias": "blivFrivilligPage",
-  "DefaultTemplate": "umb://template/0505e705c4004e6b89613424fe6d8167",
-  "AllowedTemplates": [
-    "umb://template/0505e705c4004e6b89613424fe6d8167"
-  ],
+  "Name": "Popup",
+  "Alias": "popup",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
   "HistoryCleanup": {
     "preventCleanup": false,
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-network-alt color-orange",
+  "Icon": "icon-application-window-alt color-light-green",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,
@@ -18,47 +16,27 @@
     "AllowVaryingByCulture": false,
     "AllowVaryingBySegment": false,
     "AllowedAtRoot": false,
-    "IsElementType": false,
+    "IsElementType": true,
     "AllowedChildContentTypes": []
   },
-  "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-  "CompositionContentTypes": [
-    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
-  ],
+  "Parent": "umb://document-type-container/cd863803df5745d48406847b7bdf656a",
+  "CompositionContentTypes": [],
   "PropertyGroups": [
     {
-      "Key": "593aae86-9cb2-40e1-b56e-31761a252935",
-      "Name": "Content",
-      "SortOrder": 1,
+      "Key": "d835f43e-e524-4e11-9625-0a45c8469ae4",
+      "Name": "Properties",
+      "SortOrder": 0,
       "Type": 0,
-      "Alias": "content",
+      "Alias": "properties",
       "PropertyTypes": [
         {
-          "Key": "100b9f10-d6f8-4380-a7ea-a72491ad5bca",
-          "Alias": "pageTitle",
-          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Key": "39bd4a87-a4a6-4a3d-ba87-2816f4edf6c3",
+          "Alias": "link",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Page Title",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
-        },
-        {
-          "Key": "42ad079f-15ac-4a14-a4b6-d0cbd83b71a7",
-          "Alias": "image",
-          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Image",
+          "Name": "Link",
           "SortOrder": 2,
           "Validation": null,
           "ValidationMessage": null,
@@ -70,14 +48,14 @@
           "IsSensitive": false
         },
         {
-          "Key": "882f6c44-6cad-4aea-b138-ae75ed08d955",
-          "Alias": "link",
-          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Key": "52a684d1-a668-4ebf-a7f9-a52163c13a54",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Link",
-          "SortOrder": 3,
+          "Name": "Title",
+          "SortOrder": 0,
           "Validation": null,
           "ValidationMessage": null,
           "VariesByCulture": false,
@@ -88,13 +66,13 @@
           "IsSensitive": false
         },
         {
-          "Key": "e6caee31-215b-4fe1-b2a5-ac6556973512",
-          "Alias": "pageDescription",
+          "Key": "5959efb9-aded-4cca-80e4-d60cbebb1816",
+          "Alias": "description",
           "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Page Description",
+          "Name": "Description",
           "SortOrder": 1,
           "Validation": null,
           "ValidationMessage": null,
@@ -109,15 +87,10 @@
     }
   ],
   "PropertyTypes": [],
-  "Udi": "umb://document-type/18a075a3a76449e1a0901b1dc818d514",
+  "Udi": "umb://document-type/95d3dfadbf4c4678b79eab0eeb6d7ab4",
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
       "Ordering": true,
       "Mode": 0
     },
@@ -132,17 +105,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://template/0505e705c4004e6b89613424fe6d8167",
+      "Udi": "umb://document-type-container/cd863803df5745d48406847b7bdf656a",
       "Ordering": true,
       "Mode": 0
     }

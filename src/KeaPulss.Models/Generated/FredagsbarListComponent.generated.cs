@@ -18,14 +18,14 @@ using Umbraco.Extensions;
 
 namespace KeaPulss.Models
 {
-	/// <summary>Studenterpolitik Page</summary>
-	[PublishedModel("studenterpolitikPage")]
-	public partial class StudenterpolitikPage : PublishedContentModel, IHero
+	/// <summary>Fredagsbar List Component</summary>
+	[PublishedModel("fredagsbarListComponent")]
+	public partial class FredagsbarListComponent : PublishedElementModel
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
-		public new const string ModelTypeAlias = "studenterpolitikPage";
+		public new const string ModelTypeAlias = "fredagsbarListComponent";
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		public new const PublishedItemType ModelItemType = PublishedItemType.Content;
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
@@ -34,14 +34,14 @@ namespace KeaPulss.Models
 			=> PublishedModelUtility.GetModelContentType(publishedSnapshotAccessor, ModelItemType, ModelTypeAlias);
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[return: global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		public static IPublishedPropertyType GetModelPropertyType<TValue>(IPublishedSnapshotAccessor publishedSnapshotAccessor, Expression<Func<StudenterpolitikPage, TValue>> selector)
+		public static IPublishedPropertyType GetModelPropertyType<TValue>(IPublishedSnapshotAccessor publishedSnapshotAccessor, Expression<Func<FredagsbarListComponent, TValue>> selector)
 			=> PublishedModelUtility.GetModelPropertyType(GetModelContentType(publishedSnapshotAccessor), selector);
 #pragma warning restore 0109
 
 		private IPublishedValueFallback _publishedValueFallback;
 
 		// ctor
-		public StudenterpolitikPage(IPublishedContent content, IPublishedValueFallback publishedValueFallback)
+		public FredagsbarListComponent(IPublishedElement content, IPublishedValueFallback publishedValueFallback)
 			: base(content, publishedValueFallback)
 		{
 			_publishedValueFallback = publishedValueFallback;
@@ -50,28 +50,44 @@ namespace KeaPulss.Models
 		// properties
 
 		///<summary>
-		/// Backgroundcolor
+		/// Link
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("backgroundcolor")]
-		public virtual string Backgroundcolor => this.Value<string>(_publishedValueFallback, "backgroundcolor");
+		[ImplementPropertyType("link")]
+		public virtual global::Umbraco.Cms.Core.Models.Link Link => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "link");
 
 		///<summary>
-		/// Content Grid
+		/// Picture
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("contentGrid")]
-		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel ContentGrid => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "contentGrid");
+		[ImplementPropertyType("picture")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Picture => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "picture");
 
 		///<summary>
-		/// Description
+		/// Popup Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
-		[ImplementPropertyType("description")]
-		public virtual string Description => global::KeaPulss.Models.Hero.GetDescription(this, _publishedValueFallback);
+		[ImplementPropertyType("popupDescription")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString PopupDescription => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "popupDescription");
+
+		///<summary>
+		/// Popup Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("PopupLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link PopupLink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "PopupLink");
+
+		///<summary>
+		/// Popup Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("popupTitle")]
+		public virtual string PopupTitle => this.Value<string>(_publishedValueFallback, "popupTitle");
 
 		///<summary>
 		/// Title
@@ -79,6 +95,6 @@ namespace KeaPulss.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("title")]
-		public virtual string Title => global::KeaPulss.Models.Hero.GetTitle(this, _publishedValueFallback);
+		public virtual string Title => this.Value<string>(_publishedValueFallback, "title");
 	}
 }

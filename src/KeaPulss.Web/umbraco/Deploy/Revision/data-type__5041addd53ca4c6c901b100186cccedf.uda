@@ -1,0 +1,118 @@
+{
+  "Name": "Event Page Content Grid",
+  "Alias": "",
+  "EditorAlias": "Umbraco.BlockGrid",
+  "DatabaseType": 0,
+  "Configuration": {
+    "blocks": [
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "6ede02ba-3d02-403a-b7e8-202c5f7b6544",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoImageBlock.html",
+        "label": "Image",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "17f88441-bd1e-4b83-a5a0-fc7e5dbe89aa"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "75573b5c-6da4-48b7-8bb4-ea4fc39a746e",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoRichTextBlock.html",
+        "label": "Rich Text  ({{richText | ncRichText | truncate:true:36}})",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "17f88441-bd1e-4b83-a5a0-fc7e5dbe89aa"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": false,
+        "areas": [
+          {
+            "key": "d59a9c10-1de8-4cec-934a-f73cb869b327",
+            "alias": "left",
+            "columnSpan": 6,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": []
+          },
+          {
+            "key": "816e697d-62d2-46de-a8d0-15cee2b8adb3",
+            "alias": "right",
+            "columnSpan": 6,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": []
+          }
+        ],
+        "contentElementTypeKey": "871ab5a1-a8da-4e75-8dc9-ac343205db28",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoTwoColumnLayoutBlock.html",
+        "label": "Two Column Layout",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "d102ca2f-3101-4f06-a59c-75bd81dd1325",
+        "label": "Video",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "17f88441-bd1e-4b83-a5a0-fc7e5dbe89aa"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "41e1fb26-a97d-422c-9e42-50abe5190d66",
+        "label": "InfoBox",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "17f88441-bd1e-4b83-a5a0-fc7e5dbe89aa"
+      }
+    ],
+    "blockGroups": [
+      {
+        "key": "17f88441-bd1e-4b83-a5a0-fc7e5dbe89aa",
+        "name": "Components"
+      }
+    ],
+    "validationLimit": {},
+    "useLiveEditing": false
+  },
+  "Parent": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+  "Udi": "umb://data-type/5041addd53ca4c6c901b100186cccedf",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

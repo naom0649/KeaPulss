@@ -20,7 +20,7 @@ namespace KeaPulss.Models
 {
 	/// <summary>Paris-aftalen Page</summary>
 	[PublishedModel("parisAftalenPage")]
-	public partial class ParisAftalenPage : PublishedContentModel
+	public partial class ParisAftalenPage : PublishedContentModel, IHero
 	{
 		// helpers
 #pragma warning disable 0109 // new is redundant
@@ -48,5 +48,37 @@ namespace KeaPulss.Models
 		}
 
 		// properties
+
+		///<summary>
+		/// Picture
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("picture")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops Picture => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "picture");
+
+		///<summary>
+		/// Richtext Editor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("richtextEditor")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString RichtextEditor => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "richtextEditor");
+
+		///<summary>
+		/// Description
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("description")]
+		public virtual string Description => global::KeaPulss.Models.Hero.GetDescription(this, _publishedValueFallback);
+
+		///<summary>
+		/// Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("title")]
+		public virtual string Title => global::KeaPulss.Models.Hero.GetTitle(this, _publishedValueFallback);
 	}
 }

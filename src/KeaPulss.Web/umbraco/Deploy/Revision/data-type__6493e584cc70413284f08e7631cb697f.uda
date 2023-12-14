@@ -1,0 +1,116 @@
+{
+  "Name": "Studenterpolitik Page Content Grid",
+  "Alias": "",
+  "EditorAlias": "Umbraco.BlockGrid",
+  "DatabaseType": 0,
+  "Configuration": {
+    "blocks": [
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "162f4d41-b1d4-4971-8b8d-c6646a80f8ce",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoHeadlineBlock.html",
+        "label": "Headline ({{headline | truncate:true:36}})",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "6ede02ba-3d02-403a-b7e8-202c5f7b6544",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoImageBlock.html",
+        "label": "Image",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "75573b5c-6da4-48b7-8bb4-ea4fc39a746e",
+        "view": "~/App_Plugins/Umbraco.BlockGridEditor.DefaultCustomViews/umbBlockGridDemoRichTextBlock.html",
+        "label": "Rich Text  ({{richText | ncRichText | truncate:true:36}})",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "d102ca2f-3101-4f06-a59c-75bd81dd1325",
+        "label": "Video",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "6ef2be31-ae02-42cc-96d1-3ebedf3baa99",
+        "label": "Member List",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "41e1fb26-a97d-422c-9e42-50abe5190d66",
+        "label": "InfoBox",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "520d4f5c-0366-484b-867d-56427dd16521"
+      }
+    ],
+    "blockGroups": [
+      {
+        "key": "520d4f5c-0366-484b-867d-56427dd16521",
+        "name": "Demo Blocks"
+      }
+    ],
+    "validationLimit": {},
+    "useLiveEditing": false
+  },
+  "Parent": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+  "Udi": "umb://data-type/6493e584cc70413284f08e7631cb697f",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

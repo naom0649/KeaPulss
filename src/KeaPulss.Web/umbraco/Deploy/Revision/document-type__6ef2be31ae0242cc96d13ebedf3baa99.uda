@@ -1,16 +1,14 @@
 {
-  "Name": "Fredagsbar Page",
-  "Alias": "fredagsbarPage",
-  "DefaultTemplate": "umb://template/0f6dab4d1210433fb8d46d70ab5b5de3",
-  "AllowedTemplates": [
-    "umb://template/0f6dab4d1210433fb8d46d70ab5b5de3"
-  ],
+  "Name": "Member List Component",
+  "Alias": "memberListComponent",
+  "DefaultTemplate": null,
+  "AllowedTemplates": [],
   "HistoryCleanup": {
     "preventCleanup": false,
     "keepAllVersionsNewerThanDays": null,
     "keepLatestVersionPerDayForDays": null
   },
-  "Icon": "icon-beer-glass color-orange",
+  "Icon": "icon-umb-members color-light-green",
   "Thumbnail": "folder.png",
   "Description": null,
   "IsContainer": false,
@@ -18,83 +16,81 @@
     "AllowVaryingByCulture": false,
     "AllowVaryingBySegment": false,
     "AllowedAtRoot": false,
-    "IsElementType": false,
+    "IsElementType": true,
     "AllowedChildContentTypes": []
   },
-  "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-  "CompositionContentTypes": [
-    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
-  ],
+  "Parent": "umb://document-type-container/cd863803df5745d48406847b7bdf656a",
+  "CompositionContentTypes": [],
   "PropertyGroups": [
     {
-      "Key": "1cd052a8-4512-4b53-adeb-e5a9d89e03ff",
-      "Name": "Hero",
+      "Key": "173d385d-51a9-4cf7-ac53-eea894b389db",
+      "Name": "BoardMember",
       "SortOrder": 0,
       "Type": 0,
-      "Alias": "hero",
+      "Alias": "boardMember",
       "PropertyTypes": [
         {
-          "Key": "b47b5db9-8177-492c-bbff-f2b3498f79b8",
-          "Alias": "heroPicture",
+          "Key": "12a58714-c40a-4ac0-a910-73846ec970c6",
+          "Alias": "memberName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "MemberName",
+          "SortOrder": 2,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "1b6da3be-6c4c-4710-8464-079dbc178615",
+          "Alias": "position",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Position",
+          "SortOrder": 3,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "a0d254d2-35c3-402c-8281-6f9592716fbd",
+          "Alias": "title",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Title",
+          "SortOrder": 0,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        },
+        {
+          "Key": "ae760e6f-c608-4464-8912-f317661c2664",
+          "Alias": "image",
           "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "HeroPicture",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
-        }
-      ]
-    },
-    {
-      "Key": "24a3128d-400a-40ea-9af3-3062fbfd72b5",
-      "Name": "Grid",
-      "SortOrder": 2,
-      "Type": 0,
-      "Alias": "grid",
-      "PropertyTypes": [
-        {
-          "Key": "1b8adca0-1552-4de6-88d5-6b62fc536252",
-          "Alias": "fredagsbarGrid",
-          "DataType": "umb://data-type/8118753493ba4d28bfd7c530d36371d9",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Fredagsbar Grid",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
-        }
-      ]
-    },
-    {
-      "Key": "7f33dc8c-a3a4-4936-a837-7ca2a1c6bd97",
-      "Name": "Content",
-      "SortOrder": 1,
-      "Type": 0,
-      "Alias": "content",
-      "PropertyTypes": [
-        {
-          "Key": "bfbbbc71-d284-440f-b70f-30a336b88664",
-          "Alias": "pageDescription",
-          "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Page Description",
+          "Name": "Image",
           "SortOrder": 1,
           "Validation": null,
           "ValidationMessage": null,
@@ -106,14 +102,14 @@
           "IsSensitive": false
         },
         {
-          "Key": "eff034e5-cb1b-4c17-aa63-aa0edb665c41",
-          "Alias": "pageTitle",
+          "Key": "ee3b0c7d-4f86-4bbb-82ed-ad27242804c3",
+          "Alias": "mail",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Description": null,
           "Mandatory": false,
           "MandatoryMessage": null,
-          "Name": "Page Title",
-          "SortOrder": 0,
+          "Name": "Mail",
+          "SortOrder": 4,
           "Validation": null,
           "ValidationMessage": null,
           "VariesByCulture": false,
@@ -127,15 +123,10 @@
     }
   ],
   "PropertyTypes": [],
-  "Udi": "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4",
+  "Udi": "umb://document-type/6ef2be31ae0242cc96d13ebedf3baa99",
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://data-type/8118753493ba4d28bfd7c530d36371d9",
       "Ordering": true,
       "Mode": 0
     },
@@ -145,22 +136,7 @@
       "Mode": 0
     },
     {
-      "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
-    },
-    {
-      "Udi": "umb://template/0f6dab4d1210433fb8d46d70ab5b5de3",
+      "Udi": "umb://document-type-container/cd863803df5745d48406847b7bdf656a",
       "Ordering": true,
       "Mode": 0
     }

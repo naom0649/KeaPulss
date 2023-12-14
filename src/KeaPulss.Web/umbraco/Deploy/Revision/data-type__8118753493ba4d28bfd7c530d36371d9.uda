@@ -1,0 +1,107 @@
+{
+  "Name": "Fredagsbar Page Content Grid",
+  "Alias": "",
+  "EditorAlias": "Umbraco.BlockGrid",
+  "DatabaseType": 0,
+  "Configuration": {
+    "blocks": [
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "c511f511-964a-4555-b463-139bd4cb1371",
+        "label": "Fredagsbar List",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "b8b11bd9-a573-4812-b807-baf31fd58f88"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [],
+        "contentElementTypeKey": "95d3dfad-bf4c-4678-b79e-ab0eeb6d7ab4",
+        "label": "Popup",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false,
+        "groupKey": "b8b11bd9-a573-4812-b807-baf31fd58f88"
+      },
+      {
+        "columnSpanOptions": [],
+        "rowMinSpan": 1,
+        "rowMaxSpan": 1,
+        "allowAtRoot": true,
+        "allowInAreas": true,
+        "areas": [
+          {
+            "key": "6c383c2c-4294-440d-a062-76a191e157cb",
+            "alias": "Third Left",
+            "columnSpan": 4,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": [
+              {
+                "elementTypeKey": "c511f511-964a-4555-b463-139bd4cb1371"
+              }
+            ]
+          },
+          {
+            "key": "7e31dc74-7d88-4891-8f93-a88797eeda8e",
+            "alias": "Third Center",
+            "columnSpan": 4,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": [
+              {
+                "elementTypeKey": "c511f511-964a-4555-b463-139bd4cb1371"
+              }
+            ]
+          },
+          {
+            "key": "2ad3ceb7-3060-4ee7-8fe8-2101703d8ccc",
+            "alias": "Third Right",
+            "columnSpan": 4,
+            "rowSpan": 1,
+            "minAllowed": 0,
+            "specifiedAllowance": [
+              {
+                "elementTypeKey": "c511f511-964a-4555-b463-139bd4cb1371"
+              }
+            ]
+          }
+        ],
+        "contentElementTypeKey": "062e6774-2c92-47c9-9049-6b6521391892",
+        "label": "",
+        "editorSize": "medium",
+        "inlineEditing": false,
+        "forceHideContentEditorInOverlay": false
+      }
+    ],
+    "blockGroups": [
+      {
+        "key": "b8b11bd9-a573-4812-b807-baf31fd58f88",
+        "name": "Component"
+      }
+    ],
+    "validationLimit": {},
+    "useLiveEditing": false
+  },
+  "Parent": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+  "Udi": "umb://data-type/8118753493ba4d28bfd7c530d36371d9",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
+      "Ordering": true,
+      "Mode": 0
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.0.5"
+}

@@ -50,6 +50,46 @@ namespace KeaPulss.Models
 		// properties
 
 		///<summary>
+		/// Backgroundcolor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("backgroundcolor")]
+		public virtual string Backgroundcolor => this.Value<string>(_publishedValueFallback, "backgroundcolor");
+
+		///<summary>
+		/// EventDescription
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventDescription")]
+		public virtual string EventDescription => this.Value<string>(_publishedValueFallback, "eventDescription");
+
+		///<summary>
+		/// Event Grid
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventGrid")]
+		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel EventGrid => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "eventGrid");
+
+		///<summary>
+		/// EventPicture
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventPicker")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops EventPicker => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "eventPicker");
+
+		///<summary>
+		/// Event Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventTitle")]
+		public virtual string EventTitle => this.Value<string>(_publishedValueFallback, "eventTitle");
+
+		///<summary>
 		/// Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]

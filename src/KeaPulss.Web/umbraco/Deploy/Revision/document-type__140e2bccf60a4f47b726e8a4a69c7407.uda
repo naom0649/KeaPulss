@@ -22,13 +22,85 @@
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-  "CompositionContentTypes": [],
-  "PropertyGroups": [],
+  "CompositionContentTypes": [
+    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "20589ec5-716b-4f2d-afe3-886846026e46",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Type": 0,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "fd6c2283-63c3-4229-b461-a344faa29495",
+          "Alias": "richtextEditor",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Richtext Editor",
+          "SortOrder": 0,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    },
+    {
+      "Key": "63787ad6-d427-42c3-9887-716787d61cd3",
+      "Name": "Hero",
+      "SortOrder": 0,
+      "Type": 0,
+      "Alias": "hero",
+      "PropertyTypes": [
+        {
+          "Key": "45089058-5a2d-4b75-9265-01082fbea163",
+          "Alias": "picture",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Picture",
+          "SortOrder": 0,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
+        }
+      ]
+    }
+  ],
   "PropertyTypes": [],
   "Udi": "umb://document-type/140e2bccf60a4f47b726e8a4a69c7407",
   "Dependencies": [
     {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+      "Ordering": true,
+      "Mode": 0
+    },
+    {
+      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
       "Ordering": true,
       "Mode": 0
     },
