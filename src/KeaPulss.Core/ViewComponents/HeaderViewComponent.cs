@@ -2,11 +2,14 @@
 using KeaPulss.Models.ViewModels;
 using KeaPulss.Models;
 using Microsoft.AspNetCore.Mvc;
+using Umbraco.Cms.Core.Models.PublishedContent;
+using Umbraco.Extensions;
+using Umbraco.Cms.Core.Models;
 
 
 namespace KeaPulss.Core.ViewComponents
 {
-    [ViewComponent(Name ="Header")]
+    [ViewComponent(Name = "Header")]
 
     public class HeaderViewComponent : ViewComponent
     {
@@ -22,7 +25,8 @@ namespace KeaPulss.Core.ViewComponents
         {
             if (!_contextAccessor.TryGetUmbracoContext(out var context))
             {
-                //todo: handle error
+                // TODO: håndter fejl
+                return View();
             }
 
             var root = context?.Content?
@@ -31,25 +35,30 @@ namespace KeaPulss.Core.ViewComponents
 
             if (root is null)
             {
-                //todo: handle error
+                // TODO: håndter fejl
                 return View();
             }
 
-            //Enrich view model
+            // Sørg for, at objekterne er initialiseret, før du forsøger at tilgå deres egenskaber
             var viewModel = new HeaderViewModel()
             {
-                Logo = root?.Logo,
-                NewsUrl = root?.NewsLink?.Url,
-                NewsLinkTitle = root?.NewsLink?.Name,
-                EventUrl = root?.EventLink?.Url,
-                EventTitle = root?.EventLink.Name,
-                StudielivUrl = root?.StudielivLink?.Url,
-                StudielivTitle = root?.StudielivLink?.Name
+                Logo = root.HasValue("logo") ? root.Value<MediaWithCrops>("logo") : null,
+                NewsUrl = root.NewsLink?.Url,
+                NewsLinkTitle = root.NewsLink?.Name,
+                EventUrl = root.EventLink?.Url,
+                EventTitle = root.EventLink?.Name,
+                StudielivUrl = root.StudielivLink?.Url,
+                StudielivTitle = root.StudielivLink?.Name,
+                LoginUrl = root.LoginLink?.Url
+              
+
                
+
             };
 
             return View(viewModel);
         }
+
 
     }
 }

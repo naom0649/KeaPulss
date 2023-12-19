@@ -1,0 +1,76 @@
+/* Styles/styles.css */
+
+/* General styling */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Hero section styling */
+[data-component="hero"] {
+    position: relative;
+    background-color: #8f2727;
+    overflow: hidden;
+    padding: 40px 0;
+}
+
+[data-component="hero"] h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 10px;
+}
+
+[data-component="hero"] p {
+    font-size: 1.2rem;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+/* Responsive grid styling */
+.grid {
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    gap: 24px;
+}
+
+/* Column styling */
+.col-span-10 {
+    grid-column: span 10;
+}
+
+.col-span-7 {
+    grid-column: span 7;
+}
+
+.col-span-5 {
+    grid-column: span 5;
+}
+
+/* Gap styling */
+.gap-122 {
+    margin-bottom: 122px;
+}
+
+/* Padding styling */
+.py-64 {
+    padding-top: 64px;
+    padding-bottom: 64px;
+}
+
+.sm\\:py-122 {
+    padding-top: 122px;
+    padding-bottom: 122px;
+}
+
+/* Heading 1 styling */
+.h1 {
+    font-size: 3rem;
+    color: #a02121;
+    margin-bottom: 20px;
+}

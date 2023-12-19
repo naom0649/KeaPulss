@@ -6,14 +6,61 @@
     Layout = "_Layout";
     var color = Model?.HeroColor ?? "gray";
 }
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titel</title>
+    <link rel="stylesheet" href="~/Assets/frontpage.css" type="text/css" />
+</head>
 
-<section data-component="hero" class=" gap-122 overflow-hidden bg-@color">
-    <div class="container relative grid grid-cols-12 gap-24">
-        <div class="flex flex-col items-start col-span-10 sm:col-span-7 lg:col-span-5 gap-24 py-64 sm:py-122">
-            <h1 class="h1">@Model?.Title</h1>
-            <p>@Model?.Description</p>
-            <!-- Displaying the HeroColor -->
-            <p>Hero Color: @Model?.HeroColor</p>
+    <section data-component="hero" class="gap-122 overflow-hidden bg-@color">
+        <div class="grid grid-cols-12 gap-24">
+            <div class="col-span-10 sm:col-span-7 lg:col-span-5 gap-24 py-64 sm:py-122">
+                <div>
+                    <h1 id="tekst"> jjfrjfjfj</h1>
+                </div>
+                <!-- Displaying the HeroColor -->
+                @if (Model.Image != null)
+                {
+                    <div class="relative aspect-[103/70]">
+                        <img src="@Model.Image.Url()" alt="Image Alt Text" class="object-cover w-full h-full">
+                        <div class="absolute inset-0 text-gray richtext-component flex flex-col justify-center items-center">
+                            
+                            <div class="max-w-md">
+                                @Html.Raw(Model.Description)
+                            </div>
+                        </div>
+                    </div>
+                }
+            
+                <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
+                    <h2 class="text-4xl font-bold my-8"></h2>
+                </div>
+           
+            </div>
+       
         </div>
+        <section id="ss">
+    <div>
+        <h1 id="tekst"> jjfrjfjfj</h1>
     </div>
-</section>
+    </section>
+    </section>
+<div>
+    <h1 id="tekst"> jjfrjfjfj</h1>
+</div>
+
+
+
+    <section id="welcome-image">
+        @await Html.GetBlockGridHtmlAsync(Model, "NewsContent")
+
+    </section>
+
+
+
+
+
+
+
+

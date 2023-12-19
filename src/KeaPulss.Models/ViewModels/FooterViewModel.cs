@@ -16,8 +16,11 @@ namespace KeaPulss.Models.ViewModels
         public string Slogan { get; set; }
         public BlockListModel SoMeLinks { get; set; }
         public string Address { get; set; }
+        public string AdressIdName { get; set; }
         public string OpeningHours { get; set; }
+        public string OpeningHoursIdName { get; set; }
         public string Contact { get; set;}
+        public string ContactIdName{ get; set;}
 
     }
 }

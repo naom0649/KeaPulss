@@ -1,0 +1,42 @@
+﻿@using KeaPulss.Models.ViewModels;
+@using KeaPulss.Models;
+
+
+@model FooterViewModel
+
+
+<footer>
+    <div id="footerContainer">
+        <div id="footerLogo">
+        @if (Model.LogoFooter != null)
+        {
+            <img src="@Model.LogoFooter.Url()" alt="Logo" style="max-width: 100px; max-height: 100px;">
+        }
+        else
+        {
+            @* Fallback footer logo *@
+            <svg class="max-w-[116px] max-h-[58px] ">
+                <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+            </svg>
+        }
+      
+    </div>
+    <div id="footerSlogan">
+        @Model.Slogan  
+       <p>Din footer tekst her</p>
+    </div>
+
+    <div id="adress">
+        
+        @Model.Address
+    </div>
+        <div id="adress">
+        @Model.OpeningHours
+    </div>
+
+        <div id ="adress">
+            @Model.Contact
+    </div>
+       
+    </div>
+</footer>

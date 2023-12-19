@@ -1,17 +1,12 @@
 ﻿using KeaPulss.Models.ViewModels;
 using KeaPulss.Models;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
 using Umbraco.Cms.Core.Web;
 
 namespace KeaPulss.Core.ViewComponents
 {
     [ViewComponent(Name = "Footer")]
-    public class FooterViewComponent
+    public class FooterViewComponent : ViewComponent
     {
 
         private readonly IUmbracoContextAccessor _contextAccessor;
@@ -57,14 +52,6 @@ namespace KeaPulss.Core.ViewComponents
             return View(viewModel);
         }
 
-        private IViewComponentResult View()
-        {
-            throw new NotImplementedException();
-        }
-
-        private IViewComponentResult View(FooterViewModel viewModel)
-        {
-            throw new NotImplementedException();
-        }
+       
     }
 }

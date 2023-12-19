@@ -1,0 +1,146 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    height: 65.59px;
+    background-color: #233249;
+    color: #fff;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.header-left {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+.logo {
+    height: 65.59px; /* Adjusted to match the header's height */
+}
+
+.tab {
+    cursor: pointer;
+    padding: 23.5px; /* Adjust padding as needed */
+    transition: background-color 0.3s; /* Add transition for a smooth effect */
+
+}
+
+    .tab:hover {
+        background-color: #385178a2; /* Change to your desired grey color */
+    }
+
+.header-right {
+    display: flex;
+    align-items: center;
+}
+
+.login-btn {
+    padding: 10px;
+    background-color: #000; /* Ændre til en anden farve, f.eks. sort */
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.welcome-section {
+    position: relative;
+    text-align: center;
+}
+
+.welcome-image {
+    width: 100%;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    display: block;
+}
+
+h2 {
+    margin-top: 10px;
+    position: absolute;
+    top: 85%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 3rem;
+}
+
+main {
+    padding: 1em;
+}
+
+footer {
+    background-color: #233249;
+    color: #fff;
+    padding: 1em;
+    text-align: center;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
+
+@media (max-width: 600px) {
+    header, footer {
+        font-size: 0.8em;
+    }
+
+    .tab {
+        margin-right: 10px;
+    }
+}
+
+/* Your existing CSS styles here */
+
+.logo {
+    height: 65.59px; /* Adjusted to match the header's height */
+}
+
+.tab {
+    cursor: pointer;
+    padding: 23.5px; /* Adjust padding as needed */
+    transition: background-color 0.3s; /* Add transition for a smooth effect */
+    color: #ffffff;
+}
+
+    .tab:hover {
+        background-color: #385178a2; /* Change to your desired grey color */
+    }
+
+.login-btn {
+    padding: 10px;
+    background-color: #ffffff00;
+    color: #ffffff;
+    border: none;
+    cursor: pointer;
+    font-family: "Helvetica Neue Condensed", sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+/* Media query for smaller screens */
+@media (max-width: 600px) {
+    header, footer {
+        font-size: 0.8em;
+    }
+
+    .tab {
+        margin-right: 10px;
+    }
+}

@@ -53,6 +53,24 @@
           "MemberCanEdit": false,
           "ViewOnProfile": false,
           "IsSensitive": false
+        },
+        {
+          "Key": "e7a5c52d-12dd-4ff0-8c6e-f16ca6286cbd",
+          "Alias": "image",
+          "DataType": "umb://data-type/37a274cc923140a0b91e767960e19f17",
+          "Description": null,
+          "Mandatory": false,
+          "MandatoryMessage": null,
+          "Name": "Image",
+          "SortOrder": 1,
+          "Validation": null,
+          "ValidationMessage": null,
+          "VariesByCulture": false,
+          "VariesBySegment": false,
+          "LabelOnTop": false,
+          "MemberCanEdit": false,
+          "ViewOnProfile": false,
+          "IsSensitive": false
         }
       ]
     },
@@ -105,6 +123,11 @@
   "PropertyTypes": [],
   "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
   "Dependencies": [
+    {
+      "Udi": "umb://data-type/37a274cc923140a0b91e767960e19f17",
+      "Ordering": true,
+      "Mode": 0
+    },
     {
       "Udi": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
       "Ordering": true,

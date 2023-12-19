@@ -1,0 +1,44 @@
+﻿@using KeaPulss.Models.ViewModels;
+@using KeaPulss.Models;
+
+
+@model HeaderViewModel
+
+<header>
+    <div id="headerContainer">
+        <div id="headerLogo">
+            <div class="header-left">
+                @if (Model.Logo != null)
+                {
+                    <img src="@Model.Logo.Url()" alt="Logo" class="logo">
+                }
+                else
+                {
+                    @* Fallback footer logo *@
+                    <svg class="max-w-[116px] max-h-[58px] ">
+                        <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+                    </svg>
+                }
+                <div class="tab" >
+                    <a href="@Model.NewsUrl">News</a>
+                </div>
+                <div class="tab">
+                    <a href="@Model.EventUrl">Events</a>
+                </div>
+                <div class="tab">
+                    <a href="@Model.StudielivUrl">Studieliv</a>
+                </div>
+                <div class="header-right">
+                    <a href="@Model.LoginUrl" class="login-btn">Log In</a>
+                </div>
+            </div>
+           
+        </div>
+       
+    </div>
+</header>
+
+
+
+
+

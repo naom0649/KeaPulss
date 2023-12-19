@@ -12,16 +12,26 @@
 
 
 <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>titel</title>
+    <link rel="stylesheet" href="~/Assets/index.css" type="text/css" />
 </head>
 
-<body class="flex flex-col min-h-screen overflow-x-hidden" data-page-type="@Model.ContentType.Alias">
+<body >
+    
 
-
+    @(await Component.InvokeAsync("Header"))
   
     <div id="main-content">
         @RenderBody()
     </div>
-    
+
+
+    @(await Component.InvokeAsync("Footer"))
+
+
+   
     </body>
 
 
