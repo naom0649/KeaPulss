@@ -5,21 +5,13 @@
   "AllowedTemplates": [
     "umb://template/914bf56dfdf14ac1aeb8b0510d8555cb"
   ],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-calendar-alt color-orange",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
-    "IsElementType": false,
-    "AllowedChildContentTypes": []
+    "AllowedChildContentTypes": [
+      "umb://document-type/0de9d718ea574acf97a7b118dd77c05a"
+    ]
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
   "CompositionContentTypes": [
@@ -31,20 +23,20 @@
   "Dependencies": [
     {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/0de9d718ea574acf97a7b118dd77c05a"
     },
     {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://template/914bf56dfdf14ac1aeb8b0510d8555cb",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

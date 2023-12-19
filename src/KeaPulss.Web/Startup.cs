@@ -1,3 +1,7 @@
+using FluentAssertions.Common;
+using KeaPulss.Core.Services;
+using KeaPulss.Core.Services.Interfaces;
+
 namespace KeaPulss.Web
 {
     public class Startup
@@ -35,7 +39,12 @@ namespace KeaPulss.Web
                 .AddDeliveryApi()
                 .AddComposers()
                 .Build();
+
+            services.AddTransient<INewsService, NewsService>();
+            services.AddTransient<IEventService, EventService>();
         }
+
+        
 
         /// <summary>
         /// Configures the application.
@@ -63,6 +72,19 @@ namespace KeaPulss.Web
                     u.UseBackOfficeEndpoints();
                     u.UseWebsiteEndpoints();
                 });
+        }
+    }
+
+    internal record struct NewStruct(object Item1, object Item2)
+    {
+        public static implicit operator (object, object)(NewStruct value)
+        {
+            return (value.Item1, value.Item2);
+        }
+
+        public static implicit operator NewStruct((object, object) value)
+        {
+            return new NewStruct(value.Item1, value.Item2);
         }
     }
 }

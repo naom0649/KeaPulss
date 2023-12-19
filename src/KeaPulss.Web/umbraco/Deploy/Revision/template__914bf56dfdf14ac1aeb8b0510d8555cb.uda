@@ -2,15 +2,13 @@
   "Name": "Event Container Page",
   "Alias": "EventContainerPage",
   "File": "umb://template-file/EventContainerPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/914bf56dfdf14ac1aeb8b0510d8555cb",
   "Dependencies": [
     {
       "Udi": "umb://template-file/EventContainerPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

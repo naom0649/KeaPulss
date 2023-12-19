@@ -5,20 +5,10 @@
   "AllowedTemplates": [
     "umb://template/13b9f3cda025419a9f8763c46c4bdb27"
   ],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-auction-hammer color-orange",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
-    "IsElementType": false,
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
@@ -30,53 +20,26 @@
       "Key": "7e3ef73a-9fbf-481b-b294-ed8ec588458d",
       "Name": "Grid",
       "SortOrder": 1,
-      "Type": 0,
       "Alias": "grid",
       "PropertyTypes": [
         {
           "Key": "555eeb49-b82d-4fe1-a989-a780b23d8c74",
           "Alias": "contentGrid",
           "DataType": "umb://data-type/6493e584cc70413284f08e7631cb697f",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Content Grid",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Content Grid"
         }
       ]
     },
     {
       "Key": "af69ddcf-37c0-4943-967f-deccf20b59de",
       "Name": "Hero",
-      "SortOrder": 0,
-      "Type": 0,
       "Alias": "hero",
       "PropertyTypes": [
         {
           "Key": "ec0f0f4b-4dd8-4756-ad51-2f155d6a3652",
           "Alias": "backgroundcolor",
           "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Backgroundcolor",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Backgroundcolor"
         }
       ]
     }
@@ -86,30 +49,25 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/6493e584cc70413284f08e7631cb697f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://template/13b9f3cda025419a9f8763c46c4bdb27",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

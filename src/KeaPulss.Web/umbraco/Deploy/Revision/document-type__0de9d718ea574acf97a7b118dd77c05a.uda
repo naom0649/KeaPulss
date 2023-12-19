@@ -5,20 +5,10 @@
   "AllowedTemplates": [
     "umb://template/8e766aca272b4012a9202b538383d7a7"
   ],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-calendar color-orange",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
-    "IsElementType": false,
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
@@ -29,27 +19,13 @@
     {
       "Key": "0bed15f7-5209-4e2b-8c2b-9bc947177c89",
       "Name": "Hero",
-      "SortOrder": 0,
-      "Type": 0,
       "Alias": "hero",
       "PropertyTypes": [
         {
           "Key": "47d9a9ee-3c0d-479f-9660-05299819c52e",
           "Alias": "backgroundcolor",
           "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Backgroundcolor",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Backgroundcolor"
         }
       ]
     },
@@ -57,26 +33,13 @@
       "Key": "574563fa-3506-4da2-9bc9-d4062bf4e376",
       "Name": "Properties",
       "SortOrder": 1,
-      "Type": 0,
       "Alias": "properties",
       "PropertyTypes": [
         {
           "Key": "13baa660-8a88-475e-b52a-c3b8b0b75641",
           "Alias": "eventPicker",
           "DataType": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "EventPicture",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "EventPicture"
         }
       ]
     },
@@ -84,44 +47,20 @@
       "Key": "689a5118-ac49-440f-a42d-391a1cd44022",
       "Name": "Content",
       "SortOrder": 2,
-      "Type": 0,
       "Alias": "content",
       "PropertyTypes": [
         {
           "Key": "3e2d00dc-4595-42b0-98d5-45cb082b8a5f",
           "Alias": "eventTitle",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Event Title",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Event Title"
         },
         {
           "Key": "fe622e6b-053f-40d1-b11b-a97c90d2b1fe",
           "Alias": "eventDescription",
           "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "EventDescription",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         }
       ]
     },
@@ -129,26 +68,13 @@
       "Key": "cb3156c2-78e9-4971-a390-671b4ada58f5",
       "Name": "Grid",
       "SortOrder": 3,
-      "Type": 0,
       "Alias": "grid",
       "PropertyTypes": [
         {
           "Key": "c5443178-a2ff-4612-a90a-681608431df6",
           "Alias": "eventGrid",
           "DataType": "umb://data-type/5041addd53ca4c6c901b100186cccedf",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Event Grid",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Event Grid"
         }
       ]
     }
@@ -158,45 +84,37 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/4309a3ea0d784329a06cc80b036af19a",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/5041addd53ca4c6c901b100186cccedf",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://template/8e766aca272b4012a9202b538383d7a7",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

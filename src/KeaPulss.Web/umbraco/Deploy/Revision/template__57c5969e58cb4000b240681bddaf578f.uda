@@ -2,15 +2,13 @@
   "Name": "Administrator Page",
   "Alias": "AdministratorPage",
   "File": "umb://template-file/AdministratorPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/57c5969e58cb4000b240681bddaf578f",
   "Dependencies": [
     {
       "Udi": "umb://template-file/AdministratorPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

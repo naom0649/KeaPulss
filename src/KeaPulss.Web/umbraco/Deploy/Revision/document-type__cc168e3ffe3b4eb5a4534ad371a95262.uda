@@ -5,20 +5,10 @@
   "AllowedTemplates": [
     "umb://template/e35df9184a374dd3bc9786cf6f6bbd2c"
   ],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-newspaper-alt color-orange",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
-    "IsElementType": false,
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
@@ -30,53 +20,26 @@
       "Key": "a347cba3-ac06-4c44-b409-a403b562ff6c",
       "Name": "Grid",
       "SortOrder": 1,
-      "Type": 0,
       "Alias": "grid",
       "PropertyTypes": [
         {
           "Key": "00d6f3c0-d040-4b53-b8ee-45693681bd67",
           "Alias": "newsPageContent",
           "DataType": "umb://data-type/6dc79b7be33e423ea939c53fc0933f96",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "News Page Content",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "News Page Content"
         }
       ]
     },
     {
       "Key": "fcba1890-0bab-4ede-8ab3-d4397ede1b8a",
       "Name": "Hero",
-      "SortOrder": 0,
-      "Type": 0,
       "Alias": "hero",
       "PropertyTypes": [
         {
           "Key": "f6c59795-57cf-4717-a843-46df01623d8c",
           "Alias": "backgroundcolor",
           "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "Backgroundcolor",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Backgroundcolor"
         }
       ]
     }
@@ -86,30 +49,25 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/6dc79b7be33e423ea939c53fc0933f96",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://template/e35df9184a374dd3bc9786cf6f6bbd2c",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

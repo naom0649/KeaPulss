@@ -2,7 +2,6 @@
   "Name": "Footer - SoMe - Block List",
   "Alias": "",
   "EditorAlias": "Umbraco.BlockList",
-  "DatabaseType": 0,
   "Configuration": {
     "blocks": [
       {
@@ -22,10 +21,13 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/afa89d02fc354bde9f66ccd0e122a783",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/373b13ab58ee4c66b35c0188a99709fa",
+      "Mode": "Exist"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

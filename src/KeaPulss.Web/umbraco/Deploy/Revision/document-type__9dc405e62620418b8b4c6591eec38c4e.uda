@@ -5,23 +5,15 @@
   "AllowedTemplates": [
     "umb://template/8869d5c17c154fbdb6ee0d2cced7a505"
   ],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-home color-orange",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
     "AllowedAtRoot": true,
-    "IsElementType": false,
     "AllowedChildContentTypes": [
       "umb://document-type/691086e2685744f7929c9c29d09d0d5d",
-      "umb://document-type/b19610b0516a45c4a934cfd982405318"
+      "umb://document-type/b19610b0516a45c4a934cfd982405318",
+      "umb://document-type/e42b906f0a4a4dc1b94c126414b0f778"
     ]
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
@@ -32,45 +24,20 @@
     {
       "Key": "04544f75-705e-480e-b169-378e29f3360e",
       "Name": "Hero",
-      "SortOrder": 0,
-      "Type": 0,
       "Alias": "hero",
       "PropertyTypes": [
         {
           "Key": "c30bddc5-56a6-40db-8a11-b7b6607c17e7",
           "Alias": "heroColor",
           "DataType": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "HeroColor",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "HeroColor"
         },
         {
           "Key": "e7a5c52d-12dd-4ff0-8c6e-f16ca6286cbd",
           "Alias": "image",
           "DataType": "umb://data-type/37a274cc923140a0b91e767960e19f17",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Image",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         }
       ]
     },
@@ -78,44 +45,20 @@
       "Key": "65f4834c-7ade-432b-ad71-633c498229ba",
       "Name": "Grid",
       "SortOrder": 1,
-      "Type": 0,
       "Alias": "grid",
       "PropertyTypes": [
         {
           "Key": "37545868-6bbf-4dac-bd05-442f72517aa3",
           "Alias": "listGrid",
           "DataType": "umb://data-type/69bc24dba99949bbab61dcaec521c8f9",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "List Grid",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         },
         {
           "Key": "f68a48a1-9537-48bf-b4a1-53adb0abdea9",
           "Alias": "newsContent",
           "DataType": "umb://data-type/84085b90bda149d089604b66120209d9",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "News Content",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "News Content"
         }
       ]
     }
@@ -125,50 +68,42 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/37a274cc923140a0b91e767960e19f17",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/4107516a12eb4982a7fcc817630083dd",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/69bc24dba99949bbab61dcaec521c8f9",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/84085b90bda149d089604b66120209d9",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
-      "Udi": "umb://document-type/691086e2685744f7929c9c29d09d0d5d",
-      "Ordering": false,
-      "Mode": 0
+      "Udi": "umb://document-type/691086e2685744f7929c9c29d09d0d5d"
     },
     {
       "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
-      "Udi": "umb://document-type/b19610b0516a45c4a934cfd982405318",
-      "Ordering": false,
-      "Mode": 0
+      "Udi": "umb://document-type/b19610b0516a45c4a934cfd982405318"
+    },
+    {
+      "Udi": "umb://document-type/e42b906f0a4a4dc1b94c126414b0f778"
     },
     {
       "Udi": "umb://template/8869d5c17c154fbdb6ee0d2cced7a505",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

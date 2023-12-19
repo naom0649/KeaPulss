@@ -2,15 +2,13 @@
   "Name": "News Container Page",
   "Alias": "NewsContainerPage",
   "File": "umb://template-file/NewsContainerPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/4d1560255c154bf0abb4df8e7304ba69",
   "Dependencies": [
     {
       "Udi": "umb://template-file/NewsContainerPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

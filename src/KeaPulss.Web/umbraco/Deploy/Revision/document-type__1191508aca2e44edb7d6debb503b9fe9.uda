@@ -1,28 +1,17 @@
 {
   "Name": "Root",
   "Alias": "root",
-  "DefaultTemplate": null,
   "AllowedTemplates": [],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-globe-alt color-black",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
     "AllowedAtRoot": true,
-    "IsElementType": false,
     "AllowedChildContentTypes": [
       "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
       "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4"
     ]
   },
-  "Parent": null,
   "CompositionContentTypes": [],
   "PropertyGroups": [
     {
@@ -36,116 +25,48 @@
           "Key": "020c0c15-8943-4275-91fb-33b8e4e71f78",
           "Alias": "slogan",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Slogan",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         },
         {
           "Key": "60b0243b-4b63-427a-823a-7ff740a0dcaf",
           "Alias": "logoFooter",
           "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "LogoFooter",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "LogoFooter"
         },
         {
           "Key": "800f4bce-3fc8-4626-af45-0bdc728260c4",
           "Alias": "contactUs",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Contact Us",
-          "SortOrder": 5,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 5
         },
         {
           "Key": "9f9e8f67-d6ed-45e9-a7d5-a0a7a35b0269",
           "Alias": "openingHours",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Opening Hours",
-          "SortOrder": 4,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 4
         },
         {
           "Key": "e218093b-6e7c-4981-9a34-6a4250e70a6f",
           "Alias": "address",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Address",
-          "SortOrder": 3,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 3
         },
         {
           "Key": "eef50cf8-4e9a-4dc5-8c60-ee4bde1a296c",
           "Alias": "soMeLinks",
           "DataType": "umb://data-type/c41be554d8044fc58e63a1e7c613acb6",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "SoMe Links",
-          "SortOrder": 2,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 2
         }
       ]
     },
     {
       "Key": "8a3df825-a0d1-49fb-8c50-e16b0aeed54c",
       "Name": "Global Header",
-      "SortOrder": 0,
       "Type": 1,
       "Alias": "globalHeader",
       "PropertyTypes": [
@@ -153,109 +74,43 @@
           "Key": "2f6b504c-e028-4b0d-8149-cab2bdbface5",
           "Alias": "loginLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Login Link",
-          "SortOrder": 2,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 2
         },
         {
           "Key": "3a739583-cc59-4f3a-b4bc-fd8a8c51ed26",
           "Alias": "studielivLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Studieliv Link",
-          "SortOrder": 5,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 5
         },
         {
           "Key": "68cbb76a-365d-40e2-bf55-3d6b83e3fbc8",
           "Alias": "newsLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "News Link",
-          "SortOrder": 3,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 3
         },
         {
           "Key": "bdca31d9-3fd2-4ae3-bbc3-2b0e357a65ac",
           "Alias": "languageChange",
           "DataType": "umb://data-type/145a8ebf1c7740ec9252cb805b1d1712",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Language Change",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         },
         {
           "Key": "de291968-956b-4610-9cfe-8654863c4ab8",
           "Alias": "logo",
           "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
-          "Description": null,
           "Mandatory": true,
-          "MandatoryMessage": null,
-          "Name": "Logo",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "Logo"
         },
         {
           "Key": "eaafdcd0-9f03-4492-afcf-c74bbb8e7f80",
           "Alias": "eventLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "Event Link",
-          "SortOrder": 4,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 4
         }
       ]
     }
@@ -265,40 +120,31 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/145a8ebf1c7740ec9252cb805b1d1712",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/c41be554d8044fc58e63a1e7c613acb6",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
-      "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
-      "Ordering": false,
-      "Mode": 0
+      "Udi": "umb://document-type/9dc405e62620418b8b4c6591eec38c4e"
     },
     {
-      "Udi": "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4",
-      "Ordering": false,
-      "Mode": 0
+      "Udi": "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

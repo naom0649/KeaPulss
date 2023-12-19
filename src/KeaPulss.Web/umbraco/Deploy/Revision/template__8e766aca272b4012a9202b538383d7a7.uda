@@ -2,15 +2,13 @@
   "Name": "Event Page",
   "Alias": "EventPage",
   "File": "umb://template-file/EventPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/8e766aca272b4012a9202b538383d7a7",
   "Dependencies": [
     {
       "Udi": "umb://template-file/EventPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

@@ -2,7 +2,6 @@
   "Name": "Fredagsbar Page Content Grid",
   "Alias": "",
   "EditorAlias": "Umbraco.BlockGrid",
-  "DatabaseType": 0,
   "Configuration": {
     "blocks": [
       {
@@ -98,10 +97,21 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/062e67742c9247c990496b6521391892",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/95d3dfadbf4c4678b79eab0eeb6d7ab4",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/c511f511964a4555b463139bd4cb1371",
+      "Mode": "Exist"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

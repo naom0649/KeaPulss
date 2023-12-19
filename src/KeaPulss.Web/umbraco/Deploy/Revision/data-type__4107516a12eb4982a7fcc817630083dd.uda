@@ -2,7 +2,7 @@
   "Name": "Color Picker 2 Options",
   "Alias": "",
   "EditorAlias": "Umbraco.ColorPicker",
-  "DatabaseType": 1,
+  "DatabaseType": "Nvarchar",
   "Configuration": {
     "useLabel": false,
     "items": [
@@ -21,10 +21,9 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/95ce4de6e65146d8b17a7c2d5f1985e8",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

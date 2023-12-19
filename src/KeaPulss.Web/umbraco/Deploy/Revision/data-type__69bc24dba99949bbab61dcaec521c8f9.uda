@@ -2,7 +2,6 @@
   "Name": "List Grid",
   "Alias": "",
   "EditorAlias": "Umbraco.BlockGrid",
-  "DatabaseType": 0,
   "Configuration": {
     "blocks": [
       {
@@ -48,10 +47,17 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/525a949c0a8a43e4879e22798602458f",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/99cfed6a85744b51b24aaa91a50e36e5",
+      "Mode": "Exist"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

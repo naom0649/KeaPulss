@@ -2,15 +2,13 @@
   "Name": "FrontPage",
   "Alias": "FrontPage",
   "File": "umb://template-file/FrontPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/8869d5c17c154fbdb6ee0d2cced7a505",
   "Dependencies": [
     {
       "Udi": "umb://template-file/FrontPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

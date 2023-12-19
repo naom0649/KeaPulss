@@ -1,21 +1,11 @@
 {
   "Name": "SoMe List Item",
   "Alias": "soMeListItem",
-  "DefaultTemplate": null,
   "AllowedTemplates": [],
-  "HistoryCleanup": {
-    "preventCleanup": false,
-    "keepAllVersionsNewerThanDays": null,
-    "keepLatestVersionPerDayForDays": null
-  },
+  "HistoryCleanup": {},
   "Icon": "icon-science",
   "Thumbnail": "folder.png",
-  "Description": null,
-  "IsContainer": false,
   "Permissions": {
-    "AllowVaryingByCulture": false,
-    "AllowVaryingBySegment": false,
-    "AllowedAtRoot": false,
     "IsElementType": true,
     "AllowedChildContentTypes": []
   },
@@ -25,45 +15,20 @@
     {
       "Key": "4475c6d1-667c-4a06-9ecb-4f013c3ad83a",
       "Name": "Properties",
-      "SortOrder": 0,
-      "Type": 0,
       "Alias": "properties",
       "PropertyTypes": [
         {
           "Key": "50047f02-bb3c-42f7-86f8-3724144bf6a2",
           "Alias": "soMeIcon",
           "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
-          "Name": "SoMe Icon",
-          "SortOrder": 0,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "Name": "SoMe Icon"
         },
         {
           "Key": "a7bbce81-83b9-4c65-a682-3c47875018b1",
           "Alias": "soMeLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-          "Description": null,
-          "Mandatory": false,
-          "MandatoryMessage": null,
           "Name": "SoMe Link",
-          "SortOrder": 1,
-          "Validation": null,
-          "ValidationMessage": null,
-          "VariesByCulture": false,
-          "VariesBySegment": false,
-          "LabelOnTop": false,
-          "MemberCanEdit": false,
-          "ViewOnProfile": false,
-          "IsSensitive": false
+          "SortOrder": 1
         }
       ]
     }
@@ -73,20 +38,17 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     },
     {
       "Udi": "umb://document-type-container/8eb5b4ee7570471a85462fc6cef330e9",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

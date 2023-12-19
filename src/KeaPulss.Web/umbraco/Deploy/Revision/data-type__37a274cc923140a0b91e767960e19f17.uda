@@ -2,7 +2,6 @@
   "Name": "Hero Media Picker",
   "Alias": "",
   "EditorAlias": "Umbraco.MediaPicker3",
-  "DatabaseType": 0,
   "Configuration": {
     "multiple": false,
     "validationLimit": {},
@@ -28,10 +27,9 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/87514a6dcb564a168df47ee2e5bf5c29",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

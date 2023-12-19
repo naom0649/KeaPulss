@@ -2,7 +2,6 @@
   "Name": "FrontPage Content Grid",
   "Alias": "",
   "EditorAlias": "Umbraco.BlockGrid",
-  "DatabaseType": 0,
   "Configuration": {
     "blocks": [
       {
@@ -114,10 +113,29 @@
   "Dependencies": [
     {
       "Udi": "umb://data-type-container/8a58fdf7e7504554bd5915c963c3c418",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/162f4d41b1d449718b8dc6646a80f8ce",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/6ede02ba3d02403ab7e8202c5f7b6544",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/75573b5c6da448b78bb4ea4fc39a746e",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/871ab5a1a8da4e758dc9ac343205db28",
+      "Mode": "Exist"
+    },
+    {
+      "Udi": "umb://document-type/d102ca2f31014f06a59c75bd81dd1325",
+      "Mode": "Exist"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }

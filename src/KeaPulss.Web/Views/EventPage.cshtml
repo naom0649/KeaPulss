@@ -1,6 +1,54 @@
-﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+﻿@using KeaPulss.Core.Services
+@using KeaPulss.Core.Services.Interfaces
+@using Umbraco.Cms.Web.Common.PublishedModels
+@using Umbraco.Cms.Core.Models.Blocks
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.EventPage>
 @using ContentModels = KeaPulss.Models;
+@inject IEventService eventService;
+
 @{
-	Layout = null;
+    Layout = "_Layout";
+
+    var getAllEvents = eventService.GetAll();
 }
+
+<h1>Events</h1>
+<section data-item="campaign-grid" class="group bg-silver-30">
+    @if (getAllEvents != null && getAllEvents.Any())
+    {
+        <div class="grid grid-cols-12" data-type="default">
+            <div class="col-span-full gap-30 h-full" data-type="item">
+                <section class="container">
+                    <div class="text-gray flex flex-col gap-32">
+                        <div class="flex justify-between">
+                            <h2>Relaterede begivenheder</h2>
+                        </div>
+                        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-x-40 gap-y-24">
+                            @foreach (var eventItem in getAllEvents)
+                            {
+                                <li class="col-span-1" key="@eventItem.Id">
+                                    <h3>@eventItem.EventTitle</h3>
+                                    <p>@eventItem.EventDescription</p>
+                                    <div style="background-color: @eventItem.Backgroundcolor;">
+                                        <!-- Tilføj yderligere styling eller indhold efter behov -->
+                                    </div>
+                                    
+                                    <div>
+                                        @eventItem.EventGrid <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
+                                    </div>
+                                </li>
+                            }
+                        </ul>
+                    </div>
+                </section>
+            </div>
+        </div>
+    }
+    else
+    {
+        <p>Ingen relaterede begivenheder tilgængelige.</p>
+    }
+
+    @await Html.GetBlockGridHtmlAsync(Model, "eventGrid")
+</section>
+

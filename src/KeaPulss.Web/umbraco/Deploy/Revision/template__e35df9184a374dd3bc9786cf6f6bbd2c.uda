@@ -2,15 +2,13 @@
   "Name": "News Page",
   "Alias": "NewsPage",
   "File": "umb://template-file/NewsPage.cshtml",
-  "Master": null,
   "Udi": "umb://template/e35df9184a374dd3bc9786cf6f6bbd2c",
   "Dependencies": [
     {
       "Udi": "umb://template-file/NewsPage.cshtml",
-      "Ordering": true,
-      "Mode": 0
+      "Ordering": true
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
-  "__version": "12.0.5"
+  "__version": "12.1.0"
 }
