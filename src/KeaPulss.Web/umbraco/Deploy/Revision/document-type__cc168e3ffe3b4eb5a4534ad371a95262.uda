@@ -17,9 +17,107 @@
   ],
   "PropertyGroups": [
     {
+      "Key": "3d724914-121b-4213-a0b4-c011099f6749",
+      "Name": "Content tow",
+      "SortOrder": 2,
+      "Alias": "contentTow",
+      "PropertyTypes": [
+        {
+          "Key": "91fe25cb-380f-4e3c-9bd6-73fd6617d8e3",
+          "Alias": "contentTowRichtextColor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Name": "ContentTowRichtextColor",
+          "SortOrder": 1
+        },
+        {
+          "Key": "a63b64d5-9d3e-4414-9142-6c5a637a7a98",
+          "Alias": "contentTowRichtext",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "ContentTowRichtext"
+        }
+      ]
+    },
+    {
+      "Key": "4aeb6892-d294-4f97-9028-7bd50f0a9f01",
+      "Name": "Content",
+      "SortOrder": 1,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "3ffdddab-bf6e-45be-b40f-d72890af95d9",
+          "Alias": "secondRichtext",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "SecondRichtext",
+          "SortOrder": 2
+        },
+        {
+          "Key": "6a582ff6-d683-466f-a291-e35462b47f22",
+          "Alias": "firstImage",
+          "DataType": "umb://data-type/c2789e97c11644d3abb349ac2c8e66f6",
+          "Name": "FirstImage",
+          "SortOrder": 1
+        },
+        {
+          "Key": "8b35a976-f107-4ed7-8dde-4658afa5186d",
+          "Alias": "firstRichText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "FirstRichText"
+        },
+        {
+          "Key": "b8d4df1d-c850-4e01-9060-471169729abb",
+          "Alias": "readMoreNewsLinkColor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Name": "ReadMoreNewsLinkColor",
+          "SortOrder": 4
+        },
+        {
+          "Key": "cf216cb3-db5e-4d2a-bb20-39d2dfe76814",
+          "Alias": "readMoreNewsLink",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "ReadMoreNewsLink",
+          "SortOrder": 3
+        }
+      ]
+    },
+    {
+      "Key": "67ada3b0-3bb7-4f19-aff0-4e6caea75d6e",
+      "Name": "Content Event",
+      "SortOrder": 3,
+      "Alias": "contentEvent",
+      "PropertyTypes": [
+        {
+          "Key": "6b3d7e79-4ca3-4a76-8811-09aa9915262f",
+          "Alias": "eventLinkColor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Name": "EventLinkColor",
+          "SortOrder": 3
+        },
+        {
+          "Key": "c0e81dc3-626a-4779-bc18-ab1b81ba687f",
+          "Alias": "eventLinkUrl",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "EventLinkUrl",
+          "SortOrder": 2
+        },
+        {
+          "Key": "d8646b7e-048b-404c-b9be-9c017a34e25a",
+          "Alias": "contentImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "ContentImage"
+        },
+        {
+          "Key": "e39101ca-249c-4661-adc6-71bf07dfe0fd",
+          "Alias": "contentEventText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "ContentEventText",
+          "SortOrder": 1
+        }
+      ]
+    },
+    {
       "Key": "a347cba3-ac06-4c44-b409-a403b562ff6c",
       "Name": "Grid",
-      "SortOrder": 1,
+      "SortOrder": 4,
       "Alias": "grid",
       "PropertyTypes": [
         {
@@ -52,7 +150,23 @@
       "Ordering": true
     },
     {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
       "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/c2789e97c11644d3abb349ac2c8e66f6",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
       "Ordering": true
     },
     {

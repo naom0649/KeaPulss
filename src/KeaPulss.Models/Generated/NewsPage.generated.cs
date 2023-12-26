@@ -58,12 +58,100 @@ namespace KeaPulss.Models
 		public virtual string Backgroundcolor => this.Value<string>(_publishedValueFallback, "backgroundcolor");
 
 		///<summary>
+		/// ContentEventText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contentEventText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContentEventText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contentEventText");
+
+		///<summary>
+		/// ContentImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contentImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops ContentImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "contentImage");
+
+		///<summary>
+		/// ContentTowRichtext
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contentTowRichtext")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString ContentTowRichtext => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "contentTowRichtext");
+
+		///<summary>
+		/// ContentTowRichtextColor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("contentTowRichtextColor")]
+		public virtual string ContentTowRichtextColor => this.Value<string>(_publishedValueFallback, "contentTowRichtextColor");
+
+		///<summary>
+		/// EventLinkColor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventLinkColor")]
+		public virtual string EventLinkColor => this.Value<string>(_publishedValueFallback, "eventLinkColor");
+
+		///<summary>
+		/// EventLinkUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventLinkUrl")]
+		public virtual global::Umbraco.Cms.Core.Models.Link EventLinkUrl => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "eventLinkUrl");
+
+		///<summary>
+		/// FirstImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops FirstImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "firstImage");
+
+		///<summary>
+		/// FirstRichText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("firstRichText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString FirstRichText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "firstRichText");
+
+		///<summary>
 		/// News Page Content
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("newsPageContent")]
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel NewsPageContent => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "newsPageContent");
+
+		///<summary>
+		/// ReadMoreNewsLink
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readMoreNewsLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link ReadMoreNewsLink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "readMoreNewsLink");
+
+		///<summary>
+		/// ReadMoreNewsLinkColor
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("readMoreNewsLinkColor")]
+		public virtual string ReadMoreNewsLinkColor => this.Value<string>(_publishedValueFallback, "readMoreNewsLinkColor");
+
+		///<summary>
+		/// SecondRichtext
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("secondRichtext")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString SecondRichtext => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "secondRichtext");
 
 		///<summary>
 		/// Description

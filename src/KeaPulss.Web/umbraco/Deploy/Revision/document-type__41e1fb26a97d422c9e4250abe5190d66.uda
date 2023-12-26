@@ -24,6 +24,13 @@
           "Name": "Read More Link"
         },
         {
+          "Key": "68e2395f-7d1f-46a7-96c6-9ce6ac14440a",
+          "Alias": "infoColor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Name": "infoColor",
+          "SortOrder": 3
+        },
+        {
           "Key": "a041b919-ece7-4d8e-b7eb-c28e148c7dde",
           "Alias": "description",
           "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",

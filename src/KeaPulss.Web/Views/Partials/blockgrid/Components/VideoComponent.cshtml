@@ -1,0 +1,98 @@
+﻿@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<BlockGridItem>
+@using KeaPulss
+<link rel="stylesheet" href="~/css/video.css" type="text/css" />
+
+@using Umbraco.Cms.Core.Models.Blocks
+@using Umbraco.Extensions
+@model Umbraco.Cms.Core.Models.Blocks.BlockGridItem
+@using KeaPulss.Core.Services.Interfaces;
+@using KeaPulss.Models;
+
+
+@{
+    var videoModel = Model.Content as KeaPulss.Models.VideoComponent;
+    var imageCrops = videoModel?.Thumbnail.LocalCrops;
+}
+@if (videoModel is not null)
+{
+    <section class="container">
+        <div class="text-gray flex flex-col gap-32">
+            <figure>
+                @if (videoModel?.Thumbnail != null)
+                {
+                    var thumbnailUrl = videoModel.Thumbnail.GetCropUrl(); // Adjust this line based on the method provided by MediaWithCrops
+                    var videoUrl = videoModel.VideoUrl; // Replace with the actual property name
+
+                    <a href="@videoUrl" target="_blank">
+                        <img src="@thumbnailUrl" alt="Video Thumbnail" />
+                    </a>
+
+                    @if (!videoModel.VideoDescription.IsNullOrWhiteSpace())
+                    {
+                        <figcaption class="text-sm text-gray-80 mt-4 italic">@Html.ReplaceLineBreaks(videoModel.VideoDescription)</figcaption>
+                    }
+                }
+
+            </figure>
+        </div>
+    </section>
+}
+
+
+
+@if (ViewBag.blockPreview != null)
+{
+    <script type="module" src="~/web-components/build/web-components.esm.js"></script>
+    <script nomodule src="~/web-components/build/web-components.js"></script>
+    <script>
+        //trigger render
+    </script>
+    <style>
+        .lazyload {
+            opacity: 1 !important;
+        }
+    </style>
+}
+
+<style>
+    .container {
+        max-width: 800px;
+        margin: 20px auto;
+    }
+
+    .text-gray {
+        color: #333;
+    }
+
+    .flex {
+        display: flex;
+    }
+
+    .flex-col {
+        flex-direction: column;
+    }
+
+    .gap-32 {
+        gap: 32px;
+    }
+
+    .figure {
+        margin: 0;
+    }
+
+    .text-sm {
+        font-size: 14px;
+    }
+
+    .text-gray-80 {
+        color: #808080;
+    }
+
+    .mt-4 {
+        margin-top: 16px;
+    }
+
+    .italic {
+        font-style: italic;
+    }
+</style>

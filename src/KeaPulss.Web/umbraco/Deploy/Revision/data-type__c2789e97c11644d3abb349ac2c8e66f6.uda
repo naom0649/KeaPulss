@@ -1,0 +1,29 @@
+{
+  "Name": "News Picker",
+  "Alias": "",
+  "EditorAlias": "Umbraco.MediaPicker3",
+  "Configuration": {
+    "multiple": false,
+    "validationLimit": {},
+    "enableLocalFocalPoint": false,
+    "crops": [
+      {
+        "alias": "lg",
+        "label": "lg",
+        "width": 122,
+        "height": 131
+      }
+    ],
+    "ignoreUserStartNodes": false
+  },
+  "Parent": "umb://data-type-container/87514a6dcb564a168df47ee2e5bf5c29",
+  "Udi": "umb://data-type/c2789e97c11644d3abb349ac2c8e66f6",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type-container/87514a6dcb564a168df47ee2e5bf5c29",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.DataTypeArtifact",
+  "__version": "12.1.0"
+}

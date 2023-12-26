@@ -1,49 +1,68 @@
 ﻿@using KeaPulss.Core.Services.Interfaces
+@using Umbraco.Cms.Core.Models.Blocks
 @using Umbraco.Cms.Web.Common.PublishedModels;
+
+@using Umbraco.Cms.Web.Common.Extensions
+
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.NewsPage>
 @using ContentModels = KeaPulss.Models;
 @inject INewsService newsService;
 
 @{
-	Layout = "_Layout";
+    Layout = "_Layout";
 
-	var getAllNews = newsService.GetAll();
+   
 }
+<link rel="stylesheet" href="~/Assets/newsPageOne.css" type="text/css" />
+<body>
+    
 
-<h1>Tester</h1>
-<section data-item="campaign-grid" class="group bg-silver-30">
-    @if (getAllNews != null && getAllNews.Any())
-    {
-        <div class="grid grid-cols-12" data-type="default">
-            <div class="col-span-full gap-30 h-full" data-type="item">
-                <section class="container">
-                    <div class="text-gray flex flex-col gap-32">
-                        <div class="flex justify-between">
-                            <h2>Relaterede nyheder</h2>
-                        </div>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-x-40 gap-y-24">
-                            @foreach (var news in getAllNews)
-                            {
-                                <li class="col-span-1" key="@news.Id">
-                                    <h3>@news.Title</h3>
-                                    <p>@news.Description</p>
-                                    <div style="background-color: @news.Backgroundcolor;">
-                                        <!-- Tilføj yderligere styling eller indhold efter behov -->
-                                    </div>
-                                    <div>
-                                        @news.NewsPageContent <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
-                                    </div>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </section>
+    <div id="heroSection" style="max-height: 300px; overflow: hidden; background-color: #@Model.Backgroundcolor; text-align: left; position: relative;">
+        <div id="heroTitle" style="font-size: 48px; padding: 40px 20px 0 20px;">@Model.Title</div>
+        <p>@Model.Description</p>
+
+    </div>
+
+
+    <main class="article-container">
+        <!-- ... your existing code ... -->
+
+        <div class="news-content-container">
+            <div id="textOne" class="rich-text">
+                @Model.FirstRichText
             </div>
-        </div>
-    }
-    else
-    {
-        <p>Ingen relaterede nyheder tilgængelige.</p>
-    }
-</section>
+            @if (Model.FirstImage != null){
+            <img id="img" src="@Model.FirstImage.Url()" alt="News Image" />
+            }
+            <div id="textTwo" class="rich-text">
+                @Model.SecondRichtext
+            </div>
+            <a href="@Model.ReadMoreNewsLink.Url" class="read-more-link" style="background-color: #@Model.ReadMoreNewsLinkColor">
+                @Model.ReadMoreNewsLink.Name
+            </a>
+            <div id="textone" class="rich-text">
+                @Model.ContentTowRichtext
+            </div>
+            
 
+            <div id="textTwo" class="rich-text" style="background-color: #@Model.ContentTowRichtextColor">
+                @Model.SecondRichtext
+            </div>
+
+            <img id="imgtwo" src="@Model.ContentImage.Url()" alt="News Image" />
+
+            <div id="textone" class="rich-text">
+                @Model.ContentEventText
+            </div>
+            <a href="@Model.EventLinkUrl.Url" class="read-more-link" style="background-color: #@Model.EventLinkColor">
+                @Model.EventLinkUrl.Name
+            </a>
+
+        </div>
+
+        <!-- ... rest of your HTML ... -->
+
+    </main>
+
+</body>
+</html>

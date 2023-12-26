@@ -18,6 +18,13 @@
       "Alias": "properties",
       "PropertyTypes": [
         {
+          "Key": "258ac396-47bd-4f9d-b595-3b70df91ae29",
+          "Alias": "videoUrl",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "VideoUrl",
+          "SortOrder": 3
+        },
+        {
           "Key": "331b713e-419d-414c-b7ac-43c833a0e985",
           "Alias": "videoDescription",
           "DataType": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
@@ -53,6 +60,10 @@
     },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
       "Ordering": true
     },
     {

@@ -72,5 +72,13 @@ namespace KeaPulss.Models
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("videoId")]
 		public virtual string VideoId => this.Value<string>(_publishedValueFallback, "videoId");
+
+		///<summary>
+		/// VideoUrl
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("videoUrl")]
+		public virtual global::Umbraco.Cms.Core.Models.Link VideoUrl => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "videoUrl");
 	}
 }

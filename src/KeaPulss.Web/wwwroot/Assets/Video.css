@@ -1,0 +1,40 @@
+.container {
+    max-width: 800px;
+    margin: 20px auto;
+}
+
+.text-gray {
+    color: #333;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-col {
+    flex-direction: column;
+}
+
+.gap-32 {
+    gap: 32px;
+}
+
+.figure {
+    margin: 0;
+}
+
+.text-sm {
+    font-size: 14px;
+}
+
+.text-gray-80 {
+    color: #808080;
+}
+
+.mt-4 {
+    margin-top: 16px;
+}
+
+.italic {
+    font-style: italic;
+}

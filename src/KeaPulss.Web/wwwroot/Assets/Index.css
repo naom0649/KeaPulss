@@ -90,10 +90,11 @@ footer {
     color: #fff;
     padding: 1em;
     text-align: center;
-    position: fixed;
+    position: relative; /* Ændret til relative */
     bottom: 0;
     width: 100%;
 }
+
 
 @media (max-width: 600px) {
     header, footer {

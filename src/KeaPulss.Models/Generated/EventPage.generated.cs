@@ -63,7 +63,7 @@ namespace KeaPulss.Models
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("eventDescription")]
-		public virtual string EventDescription => this.Value<string>(_publishedValueFallback, "eventDescription");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString EventDescription => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "eventDescription");
 
 		///<summary>
 		/// Event Grid
@@ -74,6 +74,14 @@ namespace KeaPulss.Models
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel EventGrid => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "eventGrid");
 
 		///<summary>
+		/// EventImage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops EventImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "eventImage");
+
+		///<summary>
 		/// EventPicture
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
@@ -82,12 +90,36 @@ namespace KeaPulss.Models
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops EventPicker => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "eventPicker");
 
 		///<summary>
+		/// EventRichtext
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("eventRichtext")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString EventRichtext => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "eventRichtext");
+
+		///<summary>
 		/// Event Title
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("eventTitle")]
-		public virtual string EventTitle => this.Value<string>(_publishedValueFallback, "eventTitle");
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString EventTitle => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "eventTitle");
+
+		///<summary>
+		/// TestRichtext
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("testRichtext")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TestRichtext => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "testRichtext");
+
+		///<summary>
+		/// TextBoks
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("textBoks")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString TextBoks => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "textBoks");
 
 		///<summary>
 		/// Description

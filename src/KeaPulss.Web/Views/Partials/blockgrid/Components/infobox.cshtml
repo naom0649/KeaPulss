@@ -1,0 +1,32 @@
+﻿@using Umbraco.Extensions
+@using Umbraco.Cms.Core.Models
+@using Umbraco.Cms.Core.Strings
+
+
+@inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<Umbraco.Cms.Core.Models.Blocks.BlockGridItem>
+<link rel="stylesheet" href="~/css/newsPageContentGrid.css" type="text/css" />
+
+@{
+    var backgroundColor = Model.Content.Value<string>("infoColor");
+    var linkProperty = Model.Content.Value<global::Umbraco.Cms.Core.Models.Link>("readMoreLink");
+    var description = Model.Content.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>("description");
+}
+
+<div class="infobox-container" style="background-color: @backgroundColor;">
+    <div class="info-box-content">
+        <p>Description: @description.ToHtmlString()</p>
+        <a href="@linkProperty.Url" class="read-more-link">@linkProperty.Name</a>
+    </div>
+</div>
+
+
+
+
+
+
+
+
+<p>Background Color: @((string)Model.Content.Value("backgroundcolor"))</p>
+<p>Description: @((IHtmlEncodedString)Model.Content.Value("description"))</p>
+<p>Info Color: @((string)Model.Content.Value("infoColor"))</p>
+<p>Read More Link: @((Link)Model.Content.Value("readMoreLink"))?.Url</p>

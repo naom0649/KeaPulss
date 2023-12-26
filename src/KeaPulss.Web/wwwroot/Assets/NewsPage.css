@@ -1,0 +1,101 @@
+  body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f7f7f7;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+
+        #heroSection {
+            max-height: 300px;
+            overflow: hidden;
+            background-color: #@Model.Backgroundcolor;
+            text-align: left;
+            position: relative;
+        }
+
+        #heroTitle {
+            font-size: 48px;
+            font-weight: 700;
+            line-height: 1.4;
+            margin-top: 40px;
+            margin-left: 20px;
+            color: #FFF;
+        }
+
+        .news-content {
+            max-width: 800px;
+            margin: 20px auto;
+        }
+
+      
+
+        .news-content iframe {
+            width: 100%;
+            height: 400px;
+            margin-top: 20px;
+        }
+
+
+           .news-content img {
+                max-width: 60%; /* Begræns billedets bredde til 100% af containeren */
+                height: auto; /* Behold billedets proportioner */
+                margin-top: 20px; /* Ændre efter behov */
+                margin-bottom: 20px; /* Tilføj margin i bunden efter behov */
+                display: block; /* Gør billedet til et blokelement for at håndtere marginer korrekt */
+                margin-left: -20px; /* Centrer billedet vandret */
+                margin-right: -20px;
+                max-height: 200px; /* Tilføj en maksimal højde efter behov */
+            }
+
+
+.news-content-container {
+    text-align: center; /* Centrer indholdet */
+}
+
+
+.main .article-container {
+    position: relative;
+    z-index: 2;
+    padding-top: 0;
+}
+
+.article-content {
+    padding-top: 20px; /* Juster denne værdi efter behov */
+}
+.main {
+    max-width: 1000px;
+    margin: 20px auto;
+}
+
+
+
+.content-container {
+    display: flex;
+    justify-content: space-between;
+}
+
+article {
+    flex: 1;
+    border: 1px solid #ccc;
+    border-radius: 8px; /* Tilføjet afrunding til hjørner */
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Tilføjer en lys skygge for at fremhæve kassen */
+    background-color: #fff !important;
+    color: #333;
+}
+
+.news-content-container {
+    padding: 20px; /* Tilføjet polstring til at skabe en firkantet kasse omkring indholdet */
+    height: 100%; /* Gør containerens højde 100% af artiklen */
+    box-sizing: border-box; /* Sikrer, at polstring og border er inkluderet i elementets samlede bredde og højde */
+}
+
+
+
+.rich-text {
+    font-size: 16px;
+    color: darkblue;
+    /* Add more styles as needed */
+}

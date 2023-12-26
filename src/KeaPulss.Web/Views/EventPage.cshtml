@@ -6,13 +6,71 @@
 @using ContentModels = KeaPulss.Models;
 @inject IEventService eventService;
 
+
 @{
     Layout = "_Layout";
 
     var getAllEvents = eventService.GetAll();
 }
+<link rel="stylesheet" href="~/Assets/EventPage.css" type="text/css" />
 
-<h1>Events</h1>
+<div id="heroSection" style="max-height: 300px; overflow: hidden; background-color: #CF072B; text-align: left; position: relative;"> 
+    <div id="heroTitle" style="font-size: 48px; padding: 40px 20px 0 20px;">@Model.Title</div>
+</div>
+    <section>
+    @if (Model.EventPicker != null)
+    {
+        <img class="overlay-image" src="@Model.EventPicker.Url()" alt="Event Image">
+    }
+    else
+    {
+        @* Fallback image *@
+        <svg class="max-w-[116px] max-h-[58px] ">
+            <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+        </svg>
+    }
+
+
+
+
+
+
+
+
+<main class="article-container" style="position: relative; z-index: 2;">
+    <article class="fixed-article">
+        <p class="article-meta"> </p>
+
+        <div class="article-content">
+            <p id="eventTitle">@Model.EventTitle</p>
+            <p id="description"> @Model.EventDescription </p>
+
+            <div class="side-by-side">
+                <div id="eventImage">
+                    @if (Model.EventImage != null)
+                    {
+                        <img src="@Model.EventImage.Url()">
+                    }
+                    else
+                    {
+                        @* Fallback footer logo *@
+                        <svg class="max-w-[116px] max-h-[58px] ">
+                            <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+                        </svg>
+                    }
+                </div>
+
+                <div id="textBoksColor">
+                    <p id="textBoks"> @Model.TextBoks </p>
+                </div>
+            </div>
+
+            <p id="eventRichtext">@Model.EventRichtext</p>
+        </div>
+    </article>
+</main>
+</section>
+
 <section data-item="campaign-grid" class="group bg-silver-30">
     @if (getAllEvents != null && getAllEvents.Any())
     {
@@ -21,7 +79,7 @@
                 <section class="container">
                     <div class="text-gray flex flex-col gap-32">
                         <div class="flex justify-between">
-                            <h2>Relaterede begivenheder</h2>
+                           
                         </div>
                         <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-x-40 gap-y-24">
                             @foreach (var eventItem in getAllEvents)
@@ -34,7 +92,8 @@
                                     </div>
                                     
                                     <div>
-                                        @eventItem.EventGrid <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
+
+                                        @await Html.GetBlockGridHtmlAsync(Model, "EventGrid") <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
                                     </div>
                                 </li>
                             }
@@ -49,6 +108,8 @@
         <p>Ingen relaterede begivenheder tilgængelige.</p>
     }
 
-    @await Html.GetBlockGridHtmlAsync(Model, "eventGrid")
+   
 </section>
+
+
 

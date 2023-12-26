@@ -1,0 +1,166 @@
+bodbody {
+	font-family: 'Inter', sans-serif;
+	background-color: #f7f7f7; /* Lys baggrundsfarve */
+	color: #333; /* Mørk tekstfarve */
+	margin: 0; /* Fjern standardmargin fra body */
+}
+body {
+	margin: 0;
+	padding: 0;
+}
+
+#heroSection {
+	height: 300px;
+}
+
+#heroTitle {
+	font-size: 48px;
+	font-weight: 700;
+	line-height: 1.4;
+	margin-top: 40px;
+	margin-left: 20px;
+	color: #FFF;
+}
+
+main {
+	max-width: 1000px; /* Øg eller formindsk den maksimale bredde efter behov */
+	margin: 20px auto;
+}
+	main.article-container {
+		position: relative;
+		z-index: 2;
+		padding-top: 0; /* Fjern top-polstring */
+	}
+
+
+article {
+	width: 100%;
+	border: 1px solid #ccc;
+	border-radius: 0;
+	overflow: hidden;
+	margin-top: -20px; /* Fjern top-margin */
+	transition: box-shadow 0.3s ease;
+}
+
+.article-content {
+	padding-top: 90px; /* Juster denne værdi efter behov */
+}
+
+
+#eventTitle, #description {
+	font-family: Open Sans Condensed;
+	font-weight: 700;
+	line-height: 1.2;
+}
+
+#eventTitle {
+	font-size: 2.5em;
+}
+
+#description {
+	font-size: 1.25em;
+}
+
+#eventImage img {
+	max-width: 100%;
+	height: auto;
+}
+
+#eventImage {
+	width: 400px;
+	height: auto;
+}
+
+#textBoksColor {
+	float: right;
+	width: 50%;
+	background: #E31919;
+	box-sizing: border-box;
+}
+
+#textBoks {
+	width: 100%; /* Gør tekstboksen 100% bred på alle skærmstørrelser */
+	height: auto;
+	color: #FEFFFE;
+	text-align: center;
+	font-family: Inter;
+	font-size: 16px;
+	font-style: normal;
+	font-weight: 400;
+	line-height: normal;
+}
+
+.side-by-side {
+	display: flex;
+	justify-content: space-between;
+	margin-top: 20px;
+}
+
+#eventRichtext {
+	margin-top: 20px;
+	font-size: 18px;
+	line-height: 1.6;
+	color: #333;
+}
+
+
+#sideImage {
+	width: 1314px;
+	height: 537px;
+}
+
+#sideImageContainer img {
+	width: 200%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+#sideImageContainer img {
+    width: 200%; /* Fyld dobbelt bredden af containeren for at dække både hero og artikel */
+    height: auto;
+    position: absolute;
+    top: 50%; /* Placer billedet 50% fra toppen af containeren */
+    left: 50%; /* Placer billedet i midten horisontalt */
+    transform: translate(-50%, -50%); /* Centrer billedet */
+    z-index: -1; /* Placer billedet bag teksten */
+}
+#sideImageOverlay {
+	position: relative;
+}
+
+	#sideImageOverlay img {
+		width: 50%;
+		height: auto;
+		position: absolute;
+		top: 50%;
+		left: 50%;
+		transform: translate(-50%, -50%);
+		z-index: 3; /* Placer billedet over de andre elementer */
+	}
+
+#heroSection,
+.main {
+	position: relative;
+	z-index: 2; /* Placer heroSection og main bag billedet */
+}
+
+.overlay-image {
+	width: 50%;
+	height: auto;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	z-index: 3; /* Placer billedet over de andre elementer */
+}
+
+
+
+
+/* ... tidligere stilarter ... */
+
+
+/* Du kan tilpasse disse stilarter efter behov */
