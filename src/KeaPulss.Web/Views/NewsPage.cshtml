@@ -37,9 +37,10 @@
             <div id="textTwo" class="rich-text">
                 @Model.SecondRichtext
             </div>
-            <a href="@Model.ReadMoreNewsLink.Url" class="read-more-link" style="background-color: #@Model.ReadMoreNewsLinkColor">
+            <a href="@Model.ReadMoreNewsLink.Url" class="read-more-link" style="@(Model.ReadMoreNewsLinkColor != null ? $"background-color: #{Model.ReadMoreNewsLinkColor}" : "")">
                 @Model.ReadMoreNewsLink.Name
             </a>
+
             <div id="textone" class="rich-text">
                 @Model.ContentTowRichtext
             </div>

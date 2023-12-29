@@ -1,43 +1,35 @@
 ﻿@using KeaPulss.Core.Services.Interfaces
-@using Umbraco.Cms.Web.Common.PublishedModels;
+@using Umbraco.Cms.Web.Common.PublishedModels
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.NewsContainerPage>
-@using ContentModels = KeaPulss.Models;
-@inject INewsService newsService;
+@using ContentModels = KeaPulss.Models
+@inject INewsService newsService
 
 @{
     Layout = "_Layout";
     var getAllNews = newsService.GetAll();
 }
+<link rel="stylesheet" href="~/Assets/NewsContainer.css" type="text/css" />
 
-<h1>hej</h1>
+<h1>Relaterede nyheder</h1>
 <section data-item="campaign-grid" class="group bg-silver-30">
     @if (getAllNews != null && getAllNews.Any())
     {
-        <div class="grid grid-cols-12" data-type="default">
-            <div class="col-span-full gap-30 h-full" data-type="item">
-                <section class="container">
-                    <div class="text-gray flex flex-col gap-32">
-                        <div class="flex justify-between">
-                            <h2>Relaterede nyheder</h2>
-                        </div>
-                        <ul class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 auto-rows-fr gap-x-40 gap-y-24">
-                            @foreach (var news in getAllNews)
-                            {
-                                <li class="col-span-1" key="@news.Id">
-                                    <h3>@news.Title</h3>
-                                    <p>@news.Description</p>
-                                    <div style="background-color: @news.Backgroundcolor;">
-                                        <!-- Tilføj yderligere styling eller indhold efter behov -->
-                                    </div>
-                                    <div>
-                                        @news.NewsPageContent <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
-                                    </div>
-                                </li>
-                            }
-                        </ul>
-                    </div>
-                </section>
-            </div>
+        <div class="news-container">
+            @for (var i = 0; i < getAllNews.Count(); i++)
+            {
+                var news = getAllNews.ElementAt(i);
+                <div class="news-box">
+                    <img src="@news.FirstImage?.Url()" alt="News Image" class="news-image" />
+                    <h2>@news.Title</h2>
+                    <p>@news.Description</p>
+                    <a href="@news.Url()" class="read-more-link">Read More</a>
+                </div>
+
+                @if ((i + 1) % 3 == 0 && i < getAllNews.Count() - 1)
+                {
+                    @:</div><div class="news-container">
+                }
+            }
         </div>
     }
     else

@@ -1,0 +1,56 @@
+﻿/* CSS-styling for NewsPageContainer */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 -5px; /* Tilføjet mindre margin mellem boksene */
+}
+
+.news-box {
+    width: calc(33.333% - 10px);
+    margin: 0 5px 15px; /* Justér marginen efter behov */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+}
+
+    .news-box img {
+        max-width: 100%;
+        height: auto;
+        border-top-left-radius: 8px;
+        border-top-right-radius: 8px;
+    }
+
+    .news-box h2 {
+        font-size: 16px; /* Mindre skriftstørrelse */
+        color: #333;
+        margin: 10px 15px 5px; /* Justér margen efter behov */
+    }
+
+    .news-box p {
+        font-size: 12px; /* Mindre skriftstørrelse */
+        color: #555;
+        margin: 0 15px 10px;
+    }
+
+.read-more-link {
+    display: inline-block;
+    margin: 0 15px 10px;
+    padding: 8px 15px; /* Mindre padding */
+    font-size: 12px; /* Mindre skriftstørrelse */
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #007BFF;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+}
+
+    .read-more-link:hover {
+        background-color: #0056b3;
+    }
