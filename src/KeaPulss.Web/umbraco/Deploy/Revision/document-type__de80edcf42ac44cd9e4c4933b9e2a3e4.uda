@@ -44,6 +44,76 @@
       ]
     },
     {
+      "Key": "25f9e92d-1d5f-4b2e-9ab8-d837f35f9734",
+      "Name": "Content Bar Three",
+      "SortOrder": 5,
+      "Alias": "contentBarThree",
+      "PropertyTypes": [
+        {
+          "Key": "66b059fd-9c65-4bbe-9141-ef900570a529",
+          "Alias": "popUpthreeText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "popUpthreeText",
+          "SortOrder": 3
+        },
+        {
+          "Key": "87ff5388-cd71-499e-92f7-f17a85f7a9ba",
+          "Alias": "linkThreeName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Link Three Name",
+          "SortOrder": 2
+        },
+        {
+          "Key": "dc1f9c8d-a255-4774-bc9f-dbbcd08130aa",
+          "Alias": "barThreeTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Bar Three Title"
+        },
+        {
+          "Key": "f169229b-7ae9-45ad-a3ef-e86324131870",
+          "Alias": "barThreeImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Bar Three Image",
+          "SortOrder": 1
+        }
+      ]
+    },
+    {
+      "Key": "56af35ff-71ba-4edd-b1cd-05efa2ee987b",
+      "Name": "Content Bar Two",
+      "SortOrder": 4,
+      "Alias": "contentBarTwo",
+      "PropertyTypes": [
+        {
+          "Key": "4cfcb17b-0ca7-42b5-a837-da0a568d5499",
+          "Alias": "barTwoImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Bar Two Image",
+          "SortOrder": 1
+        },
+        {
+          "Key": "693fba49-710d-4dcd-b5f2-3a177c3686df",
+          "Alias": "linkTwoName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Link Two Name",
+          "SortOrder": 2
+        },
+        {
+          "Key": "89a88080-afd3-4be2-bc94-3e3971f65d62",
+          "Alias": "popUpTwoText",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "popUpTwoText",
+          "SortOrder": 3
+        },
+        {
+          "Key": "8aa1a44b-ca4e-490e-b6f4-2d79a466c68d",
+          "Alias": "barTwoTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Bar Two Title"
+        }
+      ]
+    },
+    {
       "Key": "7f33dc8c-a3a4-4936-a837-7ca2a1c6bd97",
       "Name": "Content",
       "SortOrder": 1,
@@ -61,6 +131,41 @@
           "Alias": "pageTitle",
           "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
           "Name": "Page Title"
+        }
+      ]
+    },
+    {
+      "Key": "ac98b4ff-f95f-48bd-8a8d-9e5737e96a51",
+      "Name": "Content Barudvalget",
+      "SortOrder": 3,
+      "Alias": "contentBarudvalget",
+      "PropertyTypes": [
+        {
+          "Key": "2a5d71f5-0937-41c1-80b3-b8d77cd12a82",
+          "Alias": "linkOneName",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "Link OneName",
+          "SortOrder": 2
+        },
+        {
+          "Key": "39a53680-e1c6-4fe0-b684-d40eac723876",
+          "Alias": "popUpTextOne",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "popUpTextOne",
+          "SortOrder": 3
+        },
+        {
+          "Key": "6a4238bf-0913-4d59-916e-4785208cd088",
+          "Alias": "barOneImage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Bar One Image",
+          "SortOrder": 1
+        },
+        {
+          "Key": "fe72b907-6a10-4ff6-b225-bae30d8bf8c3",
+          "Alias": "barOneTitle",
+          "DataType": "umb://data-type/0cc0eba1996042c9bf9b60e150b429ae",
+          "Name": "BarOne Title"
         }
       ]
     }
@@ -82,6 +187,10 @@
     },
     {
       "Udi": "umb://data-type/c6bac0dd4ab945b18e30e4b619ee5da3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
       "Ordering": true
     },
     {

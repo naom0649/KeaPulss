@@ -2,5 +2,108 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.FredagsbarPage>
 @using ContentModels = KeaPulss.Models;
 @{
-	Layout = null;
+    Layout = "_Layout";
 }
+
+<link rel="stylesheet" href="~/Assets/Fredagsbar.css" type="text/css" />
+
+<section data-component="hero" class="gap-122 overflow-hidden">
+    <div class="grid grid-cols-12 gap-24">
+        <div class="col-span-12">
+            @if (Model.HeroPicture != null)
+            {
+                <div class="hero-image-container relative">
+                    <img src="@Model.HeroPicture.Url()" alt="Image Alt Text" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 text-gray richtext-component flex flex-col justify-center items-center">
+                        <div class="max-w-md">
+                            @Html.Raw(Model.Description)
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<section data-component="hero" class="gap-122 overflow-hidden">
+    <div class="grid grid-cols-12 gap-24">
+        <div class="col-span-12">
+            <h1 class="page-title">@Model.PageTitle</h1>
+            <p class="page-description">@Model.PageDescription</p>
+        </div>
+    </div>
+</section>
+<div class="grid grid-cols-12 gap-24 mb-8 box-container">
+    <div class="col-span-4">
+        <div class="box">
+            <img src="@Model.BarOneImage.Url()" alt="Box One Image" class="box-image">
+           
+            <div class="box-link-container">
+                <a href="@Model.LinkOneName" class="box-link" data-alias="popUpTextOne" data-content="@Html.Raw(Model.PopUpTextOne)">@Model.LinkOneName</a>
+            </div>
+
+        </div>
+
+    </div>
+    <div class="col-span-4">
+        <div class="box">
+            <img src="@Model.BarTwoImage.Url()" alt="Box Two Image" class="box-image">
+            
+            <div class="box-link-container">
+                <a href="@Model.LinkTwoName" class="box-link" data-alias="popUpTwoText" data-content="@Html.Raw(Model.PopUpTwoText)">@Model.LinkTwoName</a>
+            </div>
+        </div>
+    </div>
+    <div class="col-span-4">
+        <div class="box">
+            <img src="@Model.BarThreeImage.Url()" alt="Box Three Image" class="box-image">
+
+            <div class="box-link-container">
+                <a href="@Model.LinkThreeName" class="box-link" data-alias="popUpThreeText" data-content="@Html.Raw(Model.PopUpthreeText)">@Model.LinkThreeName</a>
+            </div>
+
+
+        </div>
+
+       
+    </div>
+    <div id="myModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div id="popupContent" class="modal-text"></div>
+        </div>
+    </div>
+
+<script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+<script>
+    $(document).ready(function () {
+        // Function to open the modal and set content
+        function openModal(content) {
+            $("#popupContent").html(content);
+            $("#myModal").css("display", "block");
+        }
+
+        // Close the modal when clicking the close button
+        $(".close").click(function () {
+            $("#myModal").css("display", "none");
+        });
+
+        // Close the modal when clicking outside the modal
+        $(window).click(function (e) {
+            if (e.target.id === "myModal") {
+                $("#myModal").css("display", "none");
+            }
+        });
+
+        // Set up click events for each box to open the corresponding modal
+        $(".box-link-container a").click(function (e) {
+            e.preventDefault();
+            var alias = $(this).data("alias");
+            var content = $(this).data("content");
+
+            openModal(content);
+        });
+    });
+</script>
+
+

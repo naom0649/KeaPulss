@@ -50,6 +50,54 @@ namespace KeaPulss.Models
 		// properties
 
 		///<summary>
+		/// Bar One Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barOneImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops BarOneImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "barOneImage");
+
+		///<summary>
+		/// BarOne Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barOneTitle")]
+		public virtual string BarOneTitle => this.Value<string>(_publishedValueFallback, "barOneTitle");
+
+		///<summary>
+		/// Bar Three Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barThreeImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops BarThreeImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "barThreeImage");
+
+		///<summary>
+		/// Bar Three Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barThreeTitle")]
+		public virtual string BarThreeTitle => this.Value<string>(_publishedValueFallback, "barThreeTitle");
+
+		///<summary>
+		/// Bar Two Image
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barTwoImage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops BarTwoImage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "barTwoImage");
+
+		///<summary>
+		/// Bar Two Title
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("barTwoTitle")]
+		public virtual string BarTwoTitle => this.Value<string>(_publishedValueFallback, "barTwoTitle");
+
+		///<summary>
 		/// Fredagsbar Grid
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
@@ -66,6 +114,30 @@ namespace KeaPulss.Models
 		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops HeroPicture => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "heroPicture");
 
 		///<summary>
+		/// Link OneName
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("linkOneName")]
+		public virtual string LinkOneName => this.Value<string>(_publishedValueFallback, "linkOneName");
+
+		///<summary>
+		/// Link Three Name
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("linkThreeName")]
+		public virtual string LinkThreeName => this.Value<string>(_publishedValueFallback, "linkThreeName");
+
+		///<summary>
+		/// Link Two Name
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("linkTwoName")]
+		public virtual string LinkTwoName => this.Value<string>(_publishedValueFallback, "linkTwoName");
+
+		///<summary>
 		/// Page Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
@@ -80,6 +152,30 @@ namespace KeaPulss.Models
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("pageTitle")]
 		public virtual string PageTitle => this.Value<string>(_publishedValueFallback, "pageTitle");
+
+		///<summary>
+		/// popUpTextOne
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("popUpTextOne")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString PopUpTextOne => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "popUpTextOne");
+
+		///<summary>
+		/// popUpthreeText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("popUpthreeText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString PopUpthreeText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "popUpthreeText");
+
+		///<summary>
+		/// popUpTwoText
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("popUpTwoText")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString PopUpTwoText => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "popUpTwoText");
 
 		///<summary>
 		/// Description
