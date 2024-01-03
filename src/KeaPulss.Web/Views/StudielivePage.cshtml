@@ -1,6 +1,9 @@
 ﻿@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.StudielivePage>
 @using ContentModels = KeaPulss.Models;
+@using KeaPulss.Models.Models; 
+      
+
 @{
 
     Layout = "_Layout";
@@ -74,26 +77,47 @@
             </form>
         </div>
     </div>
-
+   
+    </body>
+    <!-- Din eksisterende HTML-kode -->
     <!-- Din eksisterende HTML-kode -->
 
     <script>
-        // Din eksisterende JavaScript-kode
+    function openPopup() {
+        document.getElementById('popup').style.display = 'flex';
+    }
 
-        function openPopup() {
-            document.getElementById('popup').style.display = 'flex';
-        }
+    function closePopup() {
+        document.getElementById('popup').style.display = 'none';
+    }
 
-        function closePopup() {
-            document.getElementById('popup').style.display = 'none';
-        }
+    function submitApplication() {
+        var formData = {
+            stu_name: document.getElementById('name').value,
+            mail: document.getElementById('email').value,
+            posistion: document.getElementById('position').value,
+            about: document.getElementById('about').value,
+            reason: document.getElementById('reason').value
+        };
 
-        function submitApplication() {
-            // Implementer din logik til at håndtere ansøgningen her
-            // F.eks. ved at sende data til en server eller foretage en anden form for behandling
-            alert('Ansøgning sendt!');
-            closePopup();
-        }
+        // Send application data to your API
+        fetch('/api/applications', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json'
+            },
+            body: JSON.stringify(formData)
+        })
+            .then(response => response.json())
+            .then(data => {
+                alert(data.Message);
+                closePopup();
+            })
+            .catch(error => {
+                console.error('Error:', error);
+                alert('Fejl ved behandling af ansøgning.');
+            });
+    }
     </script>
-  
-</body>
+
+</html>

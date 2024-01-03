@@ -2,5 +2,31 @@
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.ParisAftalenPage>
 @using ContentModels = KeaPulss.Models;
 @{
-	Layout = null;
+	Layout = "_Layout";
 }
+<link rel="stylesheet" href="~/Assets/ParisAftale.css" type="text/css" />
+
+<section data-component="hero" class="gap-122 overflow-hidden">
+    <div class="grid grid-cols-12 gap-24">
+        <div class="col-span-12">
+            @if (Model.Picture != null)
+            {
+                <div class="hero-image-container relative">
+                    <img src="@Model.Picture.Url()" alt="Image Alt Text" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 text-gray richtext-component flex flex-col justify-center items-center">
+                        <div class="max-w-md">
+                            @Html.Raw(Model.Description)
+                        </div>
+                    </div>
+                </div>
+            }
+        </div>
+    </div>
+</section>
+
+<article class="richtext-container">
+    @Model.RichtextEditor
+</article>
+
+
+

@@ -1,0 +1,21 @@
+﻿
+    .hero-image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+    }
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 200px; /* Just an example, adjust as needed */
+    padding-bottom: 10%; /* Adjust as needed */
+}
+.richtext-container {
+    max-width: 800px; /* Adjust as needed */
+    margin: 0 auto;
+    padding: 20px; /* Adjust as needed */
+    text-align: justify;
+}

@@ -9,6 +9,7 @@
   "Icon": "icon-handshake color-orange",
   "Thumbnail": "folder.png",
   "Permissions": {
+    "AllowedAtRoot": true,
     "AllowedChildContentTypes": []
   },
   "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",

@@ -1,6 +1,18 @@
-using FluentAssertions.Common;
+using KeaPulss.Models;// Dette skal være den namespace, hvor ApplicationDbContext er defineret
 using KeaPulss.Core.Services;
 using KeaPulss.Core.Services.Interfaces;
+using Microsoft.EntityFrameworkCore;
+
+using Umbraco.Extensions;
+using Umbraco.Cms.Infrastructure.DependencyInjection;
+using Umbraco.Cms.Infrastructure.Migrations;
+
+
+using KeaPulss.Models.Models; // For ApplicationModel
+
+
+
+
 
 namespace KeaPulss.Web
 {
@@ -33,11 +45,18 @@ namespace KeaPulss.Web
         /// </remarks>
         public void ConfigureServices(IServiceCollection services)
         {
+            
+
+
+
+
             services.AddUmbraco(_env, _config)
                 .AddBackOffice()
                 .AddWebsite()
                 .AddDeliveryApi()
                 .AddComposers()
+               // .AddNotificationHandler<AddStudentCommentsTable>()
+             
                 .Build();
 
             services.AddTransient<INewsService, NewsService>();
@@ -72,6 +91,8 @@ namespace KeaPulss.Web
                     u.UseBackOfficeEndpoints();
                     u.UseWebsiteEndpoints();
                 });
+
+
         }
     }
 

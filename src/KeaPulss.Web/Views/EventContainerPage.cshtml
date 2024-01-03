@@ -1,8 +1,40 @@
-﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+﻿@using KeaPulss.Core.Services.Interfaces
+@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.EventContainerPage>
 @using ContentModels = KeaPulss.Models;
+@inject IEventService eventService
 @{
     Layout = "_Layout";
-}
+    var getAllEvents = eventService.GetAll();
 
-<h1>hej</h1>
+
+}
+<link rel="stylesheet" href="~/Assets/EventContainer.css" type="text/css" />
+
+<h1>Relaterede nyheder</h1>
+<section data-item="campaign-grid" class="group bg-silver-30">
+    @if (getAllEvents != null && getAllEvents.Any())
+    {
+        <div class="news-container">
+            @for (var i = 0; i < getAllEvents.Count(); i++)
+            {
+                var news = getAllEvents.ElementAt(i);
+                <div class="news-box">
+                    <img src="@news.EventImage?.Url()" alt="News Image" class="news-image" />
+                    <h2>@news.Title</h2>
+                    <p>@news.Description</p>
+                    <a href="@news.Url()" class="read-more-link">Read More</a>
+                </div>
+
+                @if ((i + 1) % 3 == 0 && i < getAllEvents.Count() - 1)
+                {
+                    @:</div><div class="news-container">
+                }
+            }
+        </div>
+    }
+    else
+    {
+        <p>Ingen event tilgængelige.</p>
+    }
+</section>
