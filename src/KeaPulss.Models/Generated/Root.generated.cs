@@ -58,6 +58,14 @@ namespace KeaPulss.Models
 		public virtual string Address => this.Value<string>(_publishedValueFallback, "address");
 
 		///<summary>
+		/// Application Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("applicationLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link ApplicationLink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "applicationLink");
+
+		///<summary>
 		/// Contact Us
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
@@ -72,6 +80,22 @@ namespace KeaPulss.Models
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("eventLink")]
 		public virtual global::Umbraco.Cms.Core.Models.Link EventLink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "eventLink");
+
+		///<summary>
+		/// Fredagsbar Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("fredagsbarlink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link Fredagsbarlink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "fredagsbarlink");
+
+		///<summary>
+		/// Frontpage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("frontpage")]
+		public virtual global::Umbraco.Cms.Core.Models.Link Frontpage => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "frontpage");
 
 		///<summary>
 		/// Language Change
@@ -119,6 +143,14 @@ namespace KeaPulss.Models
 		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
 		[ImplementPropertyType("openingHours")]
 		public virtual string OpeningHours => this.Value<string>(_publishedValueFallback, "openingHours");
+
+		///<summary>
+		/// Paris Aftale Link
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("parisAftaleLink")]
+		public virtual global::Umbraco.Cms.Core.Models.Link ParisAftaleLink => this.Value<global::Umbraco.Cms.Core.Models.Link>(_publishedValueFallback, "parisAftaleLink");
 
 		///<summary>
 		/// Slogan

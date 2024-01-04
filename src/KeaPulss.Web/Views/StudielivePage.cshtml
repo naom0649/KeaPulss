@@ -49,9 +49,11 @@
     <!-- Popup HTML-kode -->
     <div id="popup" class="popup">
         <div class="popup-content">
+
            
-            <span class="close" onclick="closePopup()">&times;</span>
-           
+                <!-- Tilføj en kryds-knap (×) for at lukke popup'en -->
+                <button class="close-button" onclick="closePopup()">Luk</button>
+
             <form id="applicationForm">
                 <div class="form-group">
                     <label for="name">Navn:</label>
@@ -87,6 +89,7 @@
         document.getElementById('popup').style.display = 'flex';
     }
 
+  
     function closePopup() {
         document.getElementById('popup').style.display = 'none';
     }

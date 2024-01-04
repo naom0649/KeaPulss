@@ -1,12 +1,9 @@
 ﻿using KeaPulss.Models.API;
 using Microsoft.AspNetCore.Mvc;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 using Umbraco.Cms.Core.Scoping;
 using Umbraco.Cms.Web.Common.Controllers;
+using KeaPulss.Core.Migrations;
 using static KeaPulss.Core.Migrations.AddStudentApplicationsTable;
 
 namespace KeaPulss.Core.Controller
@@ -21,7 +18,20 @@ namespace KeaPulss.Core.Controller
             _scopeProvider = scopeProvider;
         }
 
-        public IActionResult Index(PostStudentApplicationsRequest postBody)
+        // Metode til at hente alle ansøgninger
+        [HttpGet]
+        public IActionResult GetAllApplications()
+        {
+            using var scope = _scopeProvider.CreateScope();
+
+            var applications = scope.Database.Fetch<StudentCommentSchema>();
+
+            return Ok(applications);
+        }
+
+        // Metode til at oprette en ny ansøgning
+        [HttpPost]
+        public IActionResult CreateApplication(PostStudentApplicationsRequest postBody)
         {
             using var scope = _scopeProvider.CreateScope();
             var studentApplication = new StudentCommentSchema();
@@ -35,17 +45,27 @@ namespace KeaPulss.Core.Controller
 
             scope.Complete();
 
-            return Ok(); 
-
-
-
+            return Ok();
         }
 
-        //[Route("/:id")]
-        //public IActionResult Get(int id)
-        //{
+        // Metode til at slette en ansøgning baseret på ID
+        [HttpDelete("{id}")]
+        public IActionResult DeleteApplication(int id)
+        {
+            using var scope = _scopeProvider.CreateScope();
+            var existingApplication = scope.Database.SingleOrDefault<StudentCommentSchema>("WHERE Id = @0", id);
+           
 
-        //}
+            if (existingApplication == null)
+            {
+                return NotFound(); // Returner 404, hvis ansøgningen ikke findes
+            }
 
+            scope.Database.Delete(existingApplication);
+
+            scope.Complete();
+
+            return NoContent(); // Returner 204 No Content, da ansøgningen er blevet slettet
+        }
     }
 }

@@ -20,5 +20,18 @@ namespace KeaPulss.Models.ViewModels
         public string? StudielivTitle { get; set; }
         public string? LoginUrl {  get; set; }
 
+        public string? FredagsbarUrl { get; set;}
+        public string? FfredagsbarTitle {  get; set; }
+
+        public string? ApplicationUrl { get; set; }
+        public string? ApplicationTitle { get; set; }
+
+        public string? ParisAftaleUrlUrl { get; set; }
+        public string? ParisAftaleTitle { get; set; }
+
+        public string? FrontPageUrl { get; set; }
+        public string? FrontPageeTitle { get; set; }
+
+
     }
 }

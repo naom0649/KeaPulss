@@ -10,7 +10,7 @@
 }
 <link rel="stylesheet" href="~/Assets/NewsContainer.css" type="text/css" />
 
-<h1>Relaterede nyheder</h1>
+<h1>Velkommen til Kea pul news </h1>
 <section data-item="campaign-grid" class="group bg-silver-30">
     @if (getAllNews != null && getAllNews.Any())
     {
@@ -20,8 +20,8 @@
                 var news = getAllNews.ElementAt(i);
                 <div class="news-box">
                     <img src="@news.FirstImage?.Url()" alt="News Image" class="news-image" />
-                    <h2>@news.Title</h2>
-                    <p>@news.Description</p>
+                    <div>@news.Title</div>
+                   
                     <a href="@news.Url()" class="read-more-link">Read More</a>
                 </div>
 
@@ -37,3 +37,5 @@
         <p>Ingen relaterede nyheder tilgængelige.</p>
     }
 </section>
+
+

@@ -122,6 +122,24 @@ footer {
     .tab:hover {
         background-color: #385178a2; /* Change to your desired grey color */
     }
+    .header-content,
+.footer-content {
+    display: flex;
+    align-items: center;
+}
+
+/* Tilpas stilarterne for logo, faner og login-knap */
+.logo,
+.tab,
+.login-btn {
+    margin-right: 20px; /* Juster mellemrummet efter behov */
+}
+
+/* Juster fanernes padding efter behov */
+.tab {
+    padding: 10px;
+}
+
 
 .login-btn {
     padding: 10px;

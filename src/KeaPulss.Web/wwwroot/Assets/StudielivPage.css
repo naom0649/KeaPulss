@@ -141,3 +141,27 @@ img {
     .submit-button:hover {
         background-color: #0056b3;
     }
+
+/* Update the existing CSS for the close button in the popup */
+/* Update the existing CSS for the close button in the popup */
+.close-button {
+    background-color: #e74c3c; /* Choose a color for the button */
+    color: #fff;
+    border: none;
+    padding: 15px 25px;
+    cursor: pointer;
+    position: absolute;
+    top: 10px; /* Adjust the top distance as needed */
+    right: 10px; /* Adjust the right distance as needed */
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 8px;
+    border-bottom: 4px solid #c0392b; /* Highlight the bottom border for a button effect */
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+    .close-button:hover {
+        background-color: #c0392b; /* Darker color on hover */
+        transform: scale(1.05);
+    }
+

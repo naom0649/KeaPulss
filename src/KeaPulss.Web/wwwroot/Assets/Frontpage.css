@@ -1,5 +1,180 @@
-#text{
-    color:crimson
+/* Adjusted CSS for NewsPageContainer with narrower boxes and titles */
+.news-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    gap: 20px; /* Improved gap between the boxes */
 }
 
-#
+.news-box {
+    width: calc(25% - 20px); /* Adjusted box width with increased gap */
+    margin-bottom: 20px; /* Improved margin between the boxes */
+    box-sizing: border-box;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+}
+
+    .news-box img {
+        width: 100%;
+        height: 150px; /* Set a fixed height for the images */
+        object-fit: cover; /* Improved image scaling */
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .news-box h2 {
+        font-size: 16px;
+        color: #333;
+        margin: 15px; /* Increased margin for title */
+    }
+
+    .news-box p {
+        font-size: 14px;
+        color: #555;
+        margin: 0 15px 15px; /* Adjusted margin for description */
+        height: 70px; /* Limited description height */
+        overflow: hidden;
+    }
+
+.read-more-link {
+    padding: 10px 20px;
+    font-size: 14px;
+    color: #fff;
+    text-decoration: none;
+    font-weight: bold;
+    background-color: #007BFF;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+    display: inline-block;
+}
+
+    .read-more-link:hover {
+        background-color: #0056b3;
+    }
+
+.news-content {
+    padding: 15px;
+}
+
+    .news-content h2 {
+        font-size: 18px;
+        color: #333;
+        margin-bottom: 8px;
+    }
+
+    .news-content p {
+        font-size: 14px;
+        color: #555;
+        margin-bottom: 10px;
+    }
+
+
+
+    /*HEro design */
+
+.hero-image-container {
+    position: relative;
+    width: 100%;
+    height: 0;
+    padding-bottom: 30%; /* Juster dette tal efter behov for at opretholde billedets aspektforhold (i dette tilfælde 103:70) */
+}
+
+    .hero-image-container img {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+    }
+
+#eventImage img {
+    width: 600px;
+    height: 300px;
+}
+
+#eventImage {
+    width: 600px;
+    height: 300px;
+    margin-left: 50px;
+}
+
+#textBoksColor {
+    float: right;
+    width: 400px;
+    height: 300px;
+    background: #E31919;
+    box-sizing: border-box;
+    margin-right: 50px;
+}
+
+#textBoks {
+    margin-top: 70px;
+    box-sizing: border-box;
+    color: white;
+    text-align: center;
+    font-family: Inter;
+    font-size: 16px;
+    font-style: normal;
+    line-height: normal;
+}
+.side-by-side {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    margin-inline-start: 60px;
+}
+.article-section {
+    background-color: #233249; /* Replace #yourColor with the desired background color */
+    padding: 40px; /* Adjust the padding as needed */
+}
+
+.news-section-heading {
+    text-align: center;
+    margin-bottom: 30px; /* Adjust the margin as needed for spacing */
+}
+
+
+.news-section-heading, .events-section-heading {
+    text-align: center;
+    margin-bottom: 20px; /* Adjusted margin for better spacing */
+    font-size: 24px; /* Adjust font size as needed */
+    color: #333; /* Set the desired text color */
+}
+
+
+
+.news-box h2 {
+    font-size: 18px; /* Increased font size for better visibility */
+    color: #222; /* Set the desired text color */
+}
+
+.read-more-link {
+    padding: 12px 24px; /* Adjusted padding for better appearance */
+    font-size: 16px; /* Adjusted font size for better visibility */
+    background-color: #007BFF;
+    border-radius: 10px;
+}
+
+    .read-more-link:hover {
+        background-color: #0056b3;
+    }
+
+.news-box {
+    width: calc(33.33% - 20px); /* Adjusted box width for better responsiveness */
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    transition: box-shadow 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    color: #333;
+}
+
+    .news-box img {
+        height: 200px; /* Adjusted height for better consistency */
+    }

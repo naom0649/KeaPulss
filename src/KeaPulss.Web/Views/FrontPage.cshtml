@@ -1,61 +1,128 @@
-﻿@using Umbraco.Cms.Web.Common.PublishedModels;
+﻿@using KeaPulss.Core.Services.Interfaces
+@using Umbraco.Cms.Web.Common.PublishedModels;
 @inherits Umbraco.Cms.Web.Common.Views.UmbracoViewPage<ContentModels.FrontPage>
 @using ContentModels = KeaPulss.Models;
-
+@inject IEventService eventService;
+@inject INewsService newsService;
 @{
     Layout = "_Layout";
     var color = Model?.HeroColor ?? "gray";
+    var getAllEvents = eventService.GetAll();
+    var getAllNews = newsService.GetAll();
 }
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>titel</title>
     <link rel="stylesheet" href="~/Assets/frontpage.css" type="text/css" />
+   
+
 </head>
 
-    <section data-component="hero" class="gap-122 overflow-hidden bg-@color">
-        <div class="grid grid-cols-12 gap-24">
-            <div class="col-span-10 sm:col-span-7 lg:col-span-5 gap-24 py-64 sm:py-122">
-                
-                <!-- Displaying the HeroColor -->
-                @if (Model.Image != null)
-                {
-                    <div class="relative aspect-[103/70]">
-                        <img src="@Model.Image.Url()" alt="Image Alt Text" class="object-cover w-full h-full">
-                        <div class="absolute inset-0 text-gray richtext-component flex flex-col justify-center items-center">
-                            
-                            <div class="max-w-md">
-                                @Html.Raw(Model.Description)
-                            </div>
+<section data-component="hero" class="gap-122 overflow-hidden">
+    <div class="grid grid-cols-12 gap-24">
+        <div class="col-span-10 sm:col-span-7 lg:col-span-5 gap-24 py-64 sm:py-122">
+
+            <!-- Displaying the HeroColor -->
+            @if (Model.Image != null)
+            {
+                <div class="hero-image-container relative">
+                    <img src="@Model.Image.Url()" alt="Image Alt Text" class="object-cover w-full h-full">
+                    <div class="absolute inset-0 text-gray richtext-component flex flex-col justify-center items-center">
+                        <div class="max-w-md">
+                            @Html.Raw(Model.Description)
                         </div>
                     </div>
-                }
-            
-                <div class="absolute inset-0 flex flex-col justify-center items-center text-white">
-                    <h2 class="text-4xl font-bold my-8"></h2>
                 </div>
-           
-            </div>
-       
+            }
         </div>
-        <section id="ss">
-    <div>
-        <h1 id="tekst"> jjfrjfjfj</h1>
     </div>
-    </section>
-    </section>
-<div>
-    <h1 id="tekst"> jjfrjfjfj</h1>
-</div>
+</section>
 
 
 
-    <section id="welcome-image">
-        @await Html.GetBlockGridHtmlAsync(Model, "NewsContent")
-
-    </section>
 
 
+
+
+
+<h1 class="events-section-heading">KOMMENDE EVENTS</h1>
+<section data-item="campaign-grid" class="group bg-silver-30">
+    @if (getAllEvents != null && getAllEvents.Any())
+    {
+        <div class="news-container">
+            @for (var i = 0; i < Math.Min(getAllEvents.Count(), 3); i++)
+            {
+                var news = getAllEvents.ElementAt(i);
+                <div class="news-box">
+                    <img src="@news.EventImage?.Url()" alt="News Image" class="news-image" />
+                    <div>@news.Title</div>
+
+                    <a href="@news.Url()" class="read-more-link">Read More</a>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>Ingen relaterede nyheder tilgængelige.</p>
+    }
+</section>
+<section class="article-section">
+    <main class="article-container" style="position: relative; z-index: 2;">
+        <article class="fixed-article">
+            <p class="article-meta"> </p>
+
+            <div class="article-content">
+
+                <div class="side-by-side">
+                    <div id="eventImage">
+                        @if (Model.TextImageFrontpage != null)
+                        {
+                            <img src="@Model.TextImageFrontpage.Url()">
+                        }
+                        else
+                        {
+                            @* Fallback footer logo *@
+                            <svg class="max-w-[116px] max-h-[58px] ">
+                                <use class="" xlink:href="/assets/spritemap.svg#logo-primary" />
+                            </svg>
+                        }
+                    </div>
+
+                    <div id="textBoksColor">
+                        <p id="textBoks"> @Model.RichtextEditorFrontpage </p>
+                    </div>
+                </div>
+
+                <p id="eventRichtext">@Model.RichtextEditorFrontpage</p>
+            </div>
+        </article>
+    </main>
+</section>
+
+<h1 class="news-section-heading">NYHEDER</h1>
+<section data-item="campaign-grid" class="group bg-silver-30">
+    @if (getAllNews != null && getAllNews.Any())
+    {
+        <div class="news-container">
+            @for (var i = 0; i < Math.Min(getAllNews.Count(), 3); i++)
+            {
+                var news = getAllNews.ElementAt(i);
+                <div class="news-box">
+                    <img src="@news.FirstImage?.Url()" alt="News Image" class="news-image" />
+                    <div>@news.Title</div>
+
+                    <a href="@news.Url()" class="read-more-link">Read More</a>
+                </div>
+            }
+        </div>
+    }
+    else
+    {
+        <p>Ingen relaterede nyheder tilgængelige.</p>
+    }
+</section>
 
 
 

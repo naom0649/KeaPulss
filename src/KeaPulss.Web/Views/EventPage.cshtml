@@ -71,6 +71,7 @@
 </main>
 </section>
 
+@* <!--
 <section data-item="campaign-grid" class="group bg-silver-30">
     @if (getAllEvents != null && getAllEvents.Any())
     {
@@ -88,12 +89,12 @@
                                     <h3>@eventItem.EventTitle</h3>
                                     <p>@eventItem.EventDescription</p>
                                     <div style="background-color: @eventItem.Backgroundcolor;">
-                                        <!-- Tilføj yderligere styling eller indhold efter behov -->
+                                        <!-- Tilføj yderligere styling eller indhold efter behov 
                                     </div>
                                     
                                     <div>
 
-                                        @await Html.GetBlockGridHtmlAsync(Model, "EventGrid") <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer -->
+                                        @await Html.GetBlockGridHtmlAsync(Model, "EventGrid") <!-- Antager, at dette er en blok-grid; du skal muligvis løbe igennem dens elementer 
                                     </div>
                                 </li>
                             }
@@ -107,9 +108,9 @@
     {
         <p>Ingen relaterede begivenheder tilgængelige.</p>
     }
-
+            -->
    
-</section>
+</section> *@
 
 
 

@@ -1,0 +1,14 @@
+{
+  "Name": "Application Page",
+  "Alias": "ApplicationPage",
+  "File": "umb://template-file/ApplicationPage.cshtml",
+  "Udi": "umb://template/5b32177af58949d8bf3bba76897dbedd",
+  "Dependencies": [
+    {
+      "Udi": "umb://template-file/ApplicationPage.cshtml",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.TemplateArtifact",
+  "__version": "12.1.0"
+}

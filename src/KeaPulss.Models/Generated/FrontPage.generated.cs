@@ -82,6 +82,22 @@ namespace KeaPulss.Models
 		public virtual global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel NewsContent => this.Value<global::Umbraco.Cms.Core.Models.Blocks.BlockGridModel>(_publishedValueFallback, "newsContent");
 
 		///<summary>
+		/// Richtext Editor Frontpage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("richtextEditorFrontpage")]
+		public virtual global::Umbraco.Cms.Core.Strings.IHtmlEncodedString RichtextEditorFrontpage => this.Value<global::Umbraco.Cms.Core.Strings.IHtmlEncodedString>(_publishedValueFallback, "richtextEditorFrontpage");
+
+		///<summary>
+		/// Text Image Frontpage
+		///</summary>
+		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]
+		[global::System.Diagnostics.CodeAnalysis.MaybeNull]
+		[ImplementPropertyType("textImageFrontpage")]
+		public virtual global::Umbraco.Cms.Core.Models.MediaWithCrops TextImageFrontpage => this.Value<global::Umbraco.Cms.Core.Models.MediaWithCrops>(_publishedValueFallback, "textImageFrontpage");
+
+		///<summary>
 		/// Description
 		///</summary>
 		[global::System.CodeDom.Compiler.GeneratedCodeAttribute("Umbraco.ModelsBuilder.Embedded", "12.3.5+c2c1285")]

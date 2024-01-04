@@ -49,7 +49,12 @@ namespace KeaPulss.Core.ViewComponents
                 EventTitle = root.EventLink?.Name,
                 StudielivUrl = root.StudielivLink?.Url,
                 StudielivTitle = root.StudielivLink?.Name,
-                LoginUrl = root.LoginLink?.Url
+                LoginUrl = root.LoginLink?.Url,
+                FredagsbarUrl = root.Fredagsbarlink?.Url,
+                ApplicationUrl = root.ApplicationLink?.Url,
+                ParisAftaleUrlUrl = root.ParisAftaleLink?.Url,
+                FrontPageUrl = root.Fredagsbarlink?.Url
+
               
 
                

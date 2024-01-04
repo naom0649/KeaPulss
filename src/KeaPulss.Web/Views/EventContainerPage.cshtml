@@ -11,6 +11,7 @@
 }
 <link rel="stylesheet" href="~/Assets/EventContainer.css" type="text/css" />
 
+
 <h1>Relaterede nyheder</h1>
 <section data-item="campaign-grid" class="group bg-silver-30">
     @if (getAllEvents != null && getAllEvents.Any())
@@ -21,8 +22,8 @@
                 var news = getAllEvents.ElementAt(i);
                 <div class="news-box">
                     <img src="@news.EventImage?.Url()" alt="News Image" class="news-image" />
-                    <h2>@news.Title</h2>
-                    <p>@news.Description</p>
+                    <div>@news.Title</div>
+                   
                     <a href="@news.Url()" class="read-more-link">Read More</a>
                 </div>
 
@@ -35,6 +36,6 @@
     }
     else
     {
-        <p>Ingen event tilgængelige.</p>
+        <p>Ingen relaterede nyheder tilgængelige.</p>
     }
 </section>

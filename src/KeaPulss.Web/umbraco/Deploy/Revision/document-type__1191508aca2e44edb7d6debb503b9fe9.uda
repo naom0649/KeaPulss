@@ -10,7 +10,9 @@
     "AllowedChildContentTypes": [
       "umb://document-type/9dc405e62620418b8b4c6591eec38c4e",
       "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4",
-      "umb://document-type/140e2bccf60a4f47b726e8a4a69c7407"
+      "umb://document-type/140e2bccf60a4f47b726e8a4a69c7407",
+      "umb://document-type/e9becb381096450284a50b06744e6879",
+      "umb://document-type/0fa1e21279144c75b1792269f460ca26"
     ]
   },
   "CompositionContentTypes": [],
@@ -32,7 +34,7 @@
         {
           "Key": "60b0243b-4b63-427a-823a-7ff740a0dcaf",
           "Alias": "logoFooter",
-          "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
           "Name": "LogoFooter"
         },
         {
@@ -72,6 +74,13 @@
       "Alias": "globalHeader",
       "PropertyTypes": [
         {
+          "Key": "228e68b1-81fa-4a79-93b3-b4a9e6c4d64b",
+          "Alias": "fredagsbarlink",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "Fredagsbar Link",
+          "SortOrder": 6
+        },
+        {
           "Key": "2f6b504c-e028-4b0d-8149-cab2bdbface5",
           "Alias": "loginLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
@@ -86,11 +95,25 @@
           "SortOrder": 5
         },
         {
+          "Key": "5af98d1e-3700-4b1e-873b-0d7ab6b4d05c",
+          "Alias": "frontpage",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "Frontpage",
+          "SortOrder": 9
+        },
+        {
           "Key": "68cbb76a-365d-40e2-bf55-3d6b83e3fbc8",
           "Alias": "newsLink",
           "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
           "Name": "News Link",
           "SortOrder": 3
+        },
+        {
+          "Key": "8695d458-aacf-4dc4-a83d-0284ce920a4b",
+          "Alias": "parisAftaleLink",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "Paris Aftale Link",
+          "SortOrder": 8
         },
         {
           "Key": "bdca31d9-3fd2-4ae3-bbc3-2b0e357a65ac",
@@ -100,9 +123,16 @@
           "SortOrder": 1
         },
         {
+          "Key": "bf6f4146-5520-45f9-9497-7e4ea287765c",
+          "Alias": "applicationLink",
+          "DataType": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
+          "Name": "Application Link",
+          "SortOrder": 7
+        },
+        {
           "Key": "de291968-956b-4610-9cfe-8654863c4ab8",
           "Alias": "logo",
-          "DataType": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
           "Mandatory": true,
           "Name": "Logo"
         },
@@ -128,16 +158,19 @@
       "Ordering": true
     },
     {
-      "Udi": "umb://data-type/c41be554d8044fc58e63a1e7c613acb6",
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
       "Ordering": true
     },
     {
-      "Udi": "umb://data-type/d40c3989235044d6b5a8870ddfc02369",
+      "Udi": "umb://data-type/c41be554d8044fc58e63a1e7c613acb6",
       "Ordering": true
     },
     {
       "Udi": "umb://data-type/e5af2bfab99e4a878eda9f23a84f7edc",
       "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/0fa1e21279144c75b1792269f460ca26"
     },
     {
       "Udi": "umb://document-type/140e2bccf60a4f47b726e8a4a69c7407"
@@ -147,6 +180,9 @@
     },
     {
       "Udi": "umb://document-type/de80edcf42ac44cd9e4c4933b9e2a3e4"
+    },
+    {
+      "Udi": "umb://document-type/e9becb381096450284a50b06744e6879"
     }
   ],
   "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",

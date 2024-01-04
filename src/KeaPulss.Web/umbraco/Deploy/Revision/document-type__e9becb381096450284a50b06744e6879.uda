@@ -1,0 +1,55 @@
+{
+  "Name": "Application Page",
+  "Alias": "applicationPage",
+  "DefaultTemplate": "umb://template/5b32177af58949d8bf3bba76897dbedd",
+  "AllowedTemplates": [
+    "umb://template/5b32177af58949d8bf3bba76897dbedd"
+  ],
+  "HistoryCleanup": {},
+  "Icon": "icon-application-window-alt color-orange",
+  "Thumbnail": "folder.png",
+  "Permissions": {
+    "AllowedChildContentTypes": []
+  },
+  "Parent": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+  "CompositionContentTypes": [
+    "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223"
+  ],
+  "PropertyGroups": [
+    {
+      "Key": "4d978aea-5fb7-433e-919e-2515c385c51e",
+      "Name": "Hero",
+      "Alias": "hero",
+      "PropertyTypes": [
+        {
+          "Key": "5ac9bfe3-4077-49da-8519-55f77b53d05e",
+          "Alias": "backgroundcolor",
+          "DataType": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+          "Name": "Backgroundcolor"
+        }
+      ]
+    }
+  ],
+  "PropertyTypes": [],
+  "Udi": "umb://document-type/e9becb381096450284a50b06744e6879",
+  "Dependencies": [
+    {
+      "Udi": "umb://data-type/b9148d3336084ee3b5c7da70906b2a80",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type-container/1df7ed7fad754168ba1c3bcde3b5b58f",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://document-type/6e8562cd76bb4783b0236f7ff9bf4223",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://template/5b32177af58949d8bf3bba76897dbedd",
+      "Ordering": true
+    }
+  ],
+  "__type": "Umbraco.Deploy.Infrastructure,Umbraco.Deploy.Infrastructure.Artifacts.ContentType.DocumentTypeArtifact",
+  "__version": "12.1.0"
+}

@@ -22,6 +22,27 @@
   ],
   "PropertyGroups": [
     {
+      "Key": "026d09bb-5dc6-43cb-bfdf-5402021d1264",
+      "Name": "Content",
+      "SortOrder": 2,
+      "Alias": "content",
+      "PropertyTypes": [
+        {
+          "Key": "303f496a-0ae3-4326-91b2-3d0a3d4672b1",
+          "Alias": "textImageFrontpage",
+          "DataType": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+          "Name": "Text Image Frontpage",
+          "SortOrder": 1
+        },
+        {
+          "Key": "c7f93070-7a80-4d9b-8082-a5a0647ab2cd",
+          "Alias": "richtextEditorFrontpage",
+          "DataType": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
+          "Name": "Richtext Editor Frontpage"
+        }
+      ]
+    },
+    {
       "Key": "04544f75-705e-480e-b169-378e29f3360e",
       "Name": "Hero",
       "Alias": "hero",
@@ -80,6 +101,14 @@
     },
     {
       "Udi": "umb://data-type/84085b90bda149d089604b66120209d9",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ad9f0cf2bda245d59ea1a63cfc873fd3",
+      "Ordering": true
+    },
+    {
+      "Udi": "umb://data-type/ca90c9500aff4e72b976a30b1ac57dad",
       "Ordering": true
     },
     {
